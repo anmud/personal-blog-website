@@ -1,0 +1,80 @@
+@import "header.css";
+@import "footer.css";
+@import "nav.css";
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+}
+
+.container {
+  display: grid;
+  width: 90%;
+  height: 1500px;
+  margin: auto;
+  grid-template-columns: repeat(3, 4fr);
+  grid-auto-rows: minmax(100px, auto);
+  grid-gap: 10px;
+  grid-template-areas: 
+    "header header header"
+    "main   main     side"
+    "footer footer footer";
+  border: 2px solid yellow;
+
+}
+
+.box{
+  border: 1px solid red;
+  background: #F8FA9D;
+  }
+
+
+/* Header/Blog Title */
+.header {
+  grid-area: "header";
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.content {   
+  grid-area: "main";
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  
+}
+
+/* Right column */
+.side {
+  grid-area: "side";
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+/* Footer */
+.footer {
+  grid-area: "footer";
+}
+
+/* Add a card effect for additional info */
+.sideCard {
+  margin: 15px;
+  border: 1px solid green;
+}
+
+/* Add a card effect for articles */
+.postCard {
+  margin: 15px;
+  border: 1px solid green;
+}
+
+
+
