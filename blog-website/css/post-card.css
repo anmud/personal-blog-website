@@ -1,14 +1,139 @@
+.label {
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: bold;
+    margin: 5px;
+    letter-spacing: 1px;
+}
+
+.label:hover{
+    color: #e13d3d;
+    cursor: pointer;
+}
+
+.post-card h2 {
+  font-size: 2em;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.post-card h2:hover {
+    color: #e13d3d;
+    cursor: pointer;
+}
+
+.post-card h5{
+    margin-bottom: 5px;
+    margin-top: 2px;
+    letter-spacing: 1px;
+}
+
+.author-name{
+ color: #e13d3d;
+}
+
+.author-name:hover{
+    cursor: pointer;
+}
+
+.read-more-button {
+    margin-bottom: 0;
+}
+
+.read-more-button a{
+    text-decoration: none;
+    color: #e13d3d;
+}
 
 .image-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
     overflow: hidden;
-    height: 75px;
+    height: 450px;
+    width: 100%;
+    margin-top: 10px;
+    
 }
 .image-container img {
-    max-width:100%;
-    max-height: 100%;
-    
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
   }
+
+.comments-line{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e13d3d;
+    font-size: 15px;
+    padding-bottom: 0;
+}
+
+.social-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.date {
+ padding-right: 7px;
+}
+
+.facebook{
+  padding-right: 7px;
+  padding-left: 7px;
+}
+
+.facebook a{
+    text-decoration: none;
+    color: #e13d3d;
+}
+.facebook:hover{
+    cursor: pointer;
+}
+
+.tweet{
+    padding-right: 7px;
+    padding-left: 7px;
+}
+
+.tweet a{
+    text-decoration: none;
+    color: #e13d3d;
+}
+
+.tweet:hover{
+    cursor: pointer;
+}
+
+
+.pin{
+    color: #e13d3d;
+    padding-right: 7px;
+    padding-left: 7px;
+}
+
+.pin a{
+    text-decoration: none;
+    color: #e13d3d;
+}
+
+.pin:hover{
+    cursor: pointer;
+}
+
+.comments-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.comments{
+ padding-right: 10px;
+ letter-spacing: 2px;
+}
+
+.comments-number{
+  font-size: 20px; 
+  color: #e13d3d;
+}

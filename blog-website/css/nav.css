@@ -4,10 +4,16 @@
     justify-content: flex-start;
     list-style-type: none;
     overflow: hidden;
-    margin: 15px;
-    padding: 0;
+    margin: 0;
+    padding: 25px;
   }
 
+  .underline {
+    margin-right: 25px;
+    margin-left: 25px;
+    margin-top: -10px;
+    border-bottom: 1px solid #e13d3d;
+  }
 
   li a {
     display: block;
@@ -16,11 +22,13 @@
     letter-spacing: 2px;
     text-align: center;
     text-transform: uppercase;
-    padding: 15px 16px;
+    /* padding: 15px 16px; */
+    padding-top: 15px;
+    padding-right: 55px;
     text-decoration: none;
   }
   
  
   li a:hover {
-    color: #E13D3D;
+    color: #e13d3d;
   }

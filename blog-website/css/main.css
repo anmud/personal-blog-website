@@ -1,6 +1,8 @@
 @import "header.css";
 @import "footer.css";
 @import "nav.css";
+@import "post-card.css";
+@import "side-card.css"
 
 
  * {
@@ -12,6 +14,7 @@ body {
   font-family: Arial;
   padding: 20px;
   background: #fbf8f4 ;
+  color: #666;
 }
 
 .container {
@@ -21,6 +24,7 @@ body {
   margin: auto;
   grid-template-columns: repeat(3, 4fr);
   grid-auto-rows: minmax(100px, auto);
+  grid-gap: 10px;
   grid-template-areas: 
     "header header header"
     "nav nav nav"
@@ -31,7 +35,7 @@ body {
 }
 
 .box{
-  border: 1px solid red;
+   border: 1px solid red;  
   }
 
 
@@ -48,6 +52,7 @@ body {
 .nav {
   grid-area: nav;
   /* grid-area: 2/1/2/4; */
+  
   
 }
 
@@ -81,15 +86,24 @@ body {
 }
 
 /* Add a card for additional info */
-.sideCard {
+.side-card {
   margin: 10px;
-  border: 1px solid green;
+  border: 1px solid green; 
+  border-top:  1px solid #e13d3d;
+  background-color: #fff;
 }
 
 /* Add a card for articles */
-.postCard {
+.post-card {
   margin: 10px;
-  border: 1px solid green;
+  margin-bottom: 55px;
+  padding-right: 12px;
+  padding-left: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  /* border: 1px solid green; */
 }
 
 
