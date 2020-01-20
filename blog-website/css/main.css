@@ -3,7 +3,7 @@
 @import "nav.css";
 
 
-* {
+ * {
   box-sizing: border-box;
 }
 
@@ -11,20 +11,20 @@
 body {
   font-family: Arial;
   padding: 20px;
-  background: #f1f1f1;
+  background: #fbf8f4 ;
 }
 
 .container {
   display: grid;
   width: 90%;
-  height: 1500px;
+  height: auto;
   margin: auto;
   grid-template-columns: repeat(3, 4fr);
   grid-auto-rows: minmax(100px, auto);
-  grid-gap: 10px;
   grid-template-areas: 
     "header header header"
-    "main   main     side"
+    "nav nav nav"
+    "main   main   side"
     "footer footer footer";
   border: 2px solid yellow;
 
@@ -32,20 +32,32 @@ body {
 
 .box{
   border: 1px solid red;
-  background: #F8FA9D;
   }
 
 
 /* Header/Blog Title */
 .header {
-  grid-area: "header";
+  grid-area: header;
+  /* grid-area: 1/1/1/4; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+
+.nav {
+  grid-area: nav;
+  /* grid-area: 2/1/2/4; */
+  
 }
 
 /* Create two unequal columns that floats next to each other */
 /* Left column */
 .content {   
-  grid-area: "main";
+  grid-area: main;
+  /* grid-area: 3/1/3/3; */
   display: grid;
+  grid-gap: 10px;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
   
@@ -53,26 +65,30 @@ body {
 
 /* Right column */
 .side {
-  grid-area: "side";
+  grid-area: side;
+  /* grid-area: 3/4/3/3; */
   display: grid;
+  grid-gap: 10px;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr;
 }
 
 /* Footer */
 .footer {
-  grid-area: "footer";
+  grid-area: footer;
+  /* grid-area: 4/1/5/4; */
+ 
 }
 
-/* Add a card effect for additional info */
+/* Add a card for additional info */
 .sideCard {
-  margin: 15px;
+  margin: 10px;
   border: 1px solid green;
 }
 
-/* Add a card effect for articles */
+/* Add a card for articles */
 .postCard {
-  margin: 15px;
+  margin: 10px;
   border: 1px solid green;
 }
 
