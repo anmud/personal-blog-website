@@ -137,3 +137,29 @@
   font-size: 20px; 
   color: #e13d3d;
 }
+
+.load-content-button{
+ margin-left: 251px;
+ margin-right: 317px;
+ margin-top: 0;
+ margin-bottom: 55px;
+ border: 1px solid #e13d3d;
+ background-color: #fff;
+}
+
+
+.load-content-button a{
+    color: #e13d3d;
+    text-align: center;
+    font-style: italic;
+    background-color: #fff;
+    padding: 14px 110px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.load-content-button a:hover{
+    color:#fff;
+    background-color: #e13d3d;
+}
