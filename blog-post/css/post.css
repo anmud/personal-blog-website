@@ -5,7 +5,8 @@
 @import "../../blog-website/css/side-card.css";
 @import "post-body.css";
 @import "additional-posts.css";
-@import "comments-card.css"
+@import "comments-card.css";
+@import "form.css";
 
 * {
   box-sizing: border-box;
@@ -53,16 +54,24 @@ body {
   margin-right: 85px;
 }
 
-/* Create two unequal columns that floats next to each other */
-/* Left column */
+
 .post-content {   
   grid-area: post;
   display: grid;
   grid-gap: 10px;
   grid-template-columns: 1fr;
   grid-auto-rows: minmax(100px, auto);
+  grid-template-areas: 
+    "post-body"
+    "additional-posts"
+    "commants-card"
+    "comment-form";
   margin-left: 95px;
-  margin-right: 35px; 
+  margin-right: 35px;  
+}
+
+.post-body{
+    grid-area: post-body;
 }
 
 .additional-posts{
@@ -76,9 +85,17 @@ body {
 .comments-card{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     height: fit-content;
-    border: 1px solid blue;
+    background-color: #fff;
+    /* border: 1px solid blue; */
+    margin-right: 10px;
+}
+
+.comment-form{
+    background-color: #fff;
+    margin-left: 1px;
+    margin-right: 10px;
 }
 
 /* Right column */

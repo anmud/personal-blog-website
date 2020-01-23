@@ -7,7 +7,7 @@
 .additional-cards{
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-evenly;
 }
 
 .post-info{
@@ -16,7 +16,7 @@
  align-items: center;
  background-color: #fff;
  margin-right: 10px;
- margin-left: 10px; 
+ margin-left: 10px;  
 }
 
 .add-image-container{
