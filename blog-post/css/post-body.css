@@ -73,7 +73,24 @@
 .post-social-container{
     display: flex;
     flex-direction: row;
+
 }
+
+.post-comments-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.post-comments{
+    padding-right: 10px;
+    letter-spacing: 2px;
+   }
+
+.post-comments-number{
+    font-size: 20px; 
+     color: #e13d3d;
+   }
 
 .post-date {
  padding-right: 10px;

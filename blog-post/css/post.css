@@ -1,10 +1,11 @@
-@import "../../blog-website/css/main.css";
+/* @import "../../blog-website/css/main.css"; */
 @import "../../blog-website/css/header.css";
 @import "../../blog-website/css/footer.css";
 @import "../../blog-website/css/nav.css";
 @import "../../blog-website/css/side-card.css";
 @import "post-body.css";
 @import "additional-posts.css";
+@import "comments-card.css"
 
 * {
   box-sizing: border-box;
@@ -15,7 +16,7 @@ body {
   font-family: Arial;
   background: #fbf8f4 ;
   color: #666;
-}
+} 
 
 .post-container {
   display: grid;
@@ -28,8 +29,8 @@ body {
   grid-gap: 10px;
   grid-template-areas: 
     "header header header"
-    "nav nav nav"
-    "main   main   side"
+    "nav    nav    nav"
+    "post   post   side"
     "footer footer footer";
   border: 2px solid yellow; 
 
@@ -55,22 +56,29 @@ body {
 /* Create two unequal columns that floats next to each other */
 /* Left column */
 .post-content {   
-  grid-area: main;
+  grid-area: post;
   display: grid;
   grid-gap: 10px;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  margin-left: 85px;
-  margin-right: 25px; 
+  grid-auto-rows: minmax(100px, auto);
+  margin-left: 95px;
+  margin-right: 35px; 
 }
 
 .additional-posts{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    border: 1px solid green;
     height: fit-content;
     margin-top: 15px;
+}
+
+.comments-card{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: fit-content;
+    border: 1px solid blue;
 }
 
 /* Right column */
