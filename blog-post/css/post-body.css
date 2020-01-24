@@ -1,11 +1,3 @@
-.post-body{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* border: 1px solid green; */
-    margin: 10px;
-    height: fit-content;
-}
 
 .category {
     text-transform: uppercase;
@@ -24,6 +16,8 @@
 .post-text-container{
   /* border: 1px solid green; */
   line-height: 1.5em;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 .post-text-container h2{
@@ -39,7 +33,7 @@
     cursor: pointer;
   }
 
-  .post-text-container h5{
+.post-text-container h5{
     margin-bottom: 5px;
     margin-top: 2px;
     letter-spacing: 1px;
@@ -50,50 +44,58 @@
     height: 450px;
     width: 100%;
     margin-top: 10px;
-    
+    padding-right: 15px;
 }
 
 .post-image-container img {
     width: 100%;
     height: 100%;
-    object-fit: fill;
+    object-fit: contain;
   }
 
+.post-text{
+    line-height: 1.5em;
+    padding-right: 10px;
+}
+
 .post-comments-line{
-    width: 100%;
+    width: 100%; 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #e13d3d;
     border-top: 1px solid #e13d3d;
-    font-size: 15px;
+    margin-right: 15px;
+    margin-left: 10px;
 }
 
 .post-social-container{
     display: flex;
     flex-direction: row;
-
+    padding-left: 10px;
 }
 
 .post-comments-container{
     display: flex;
     flex-direction: row;
     align-items: center;
+    padding-right: 35px;
 }
 
 .post-comments{
-    padding-right: 10px;
+    padding-right: 15px;
     letter-spacing: 2px;
-   }
+}
 
 .post-comments-number{
     font-size: 20px; 
      color: #e13d3d;
-   }
+}
 
 .post-date {
- padding-right: 10px;
+ padding-right: 15px;
+ font-size: 15px;
 }
 
 .post-facebook-button{

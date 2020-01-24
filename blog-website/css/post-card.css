@@ -19,7 +19,12 @@
   margin-bottom: 12px;
 }
 
-.post-card h2:hover {
+.post-heading {
+    text-decoration: none;
+    color: #666;
+}
+
+.post-heading:hover {
     color: #e13d3d;
     cursor: pointer;
 }

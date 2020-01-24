@@ -7,22 +7,24 @@
 .additional-cards{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
+    margin-left: 7px;
 }
 
 .post-info{
- display: flex;
- flex-direction: column;
- align-items: center;
+ display: inline-block;
+ /* flex-direction: column;
+ align-items: center; */
  background-color: #fff;
- margin-right: 10px;
- margin-left: 10px;  
+ margin-right: 19px;
+ /* margin-left: 10px;   */
+ flex: 1;
 }
 
 .add-image-container{
     overflow: hidden;
     height: 180px;
-    width: 250px;
+    width: 255px;
     margin-top: 0;
 }
 
