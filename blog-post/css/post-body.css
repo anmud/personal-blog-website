@@ -1,152 +1,142 @@
-
 .category {
-    text-transform: uppercase;
-    font-size: 11px;
-    font-weight: bold;
-    margin: 5px;
-    letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: bold;
+  margin: 5px;
+  letter-spacing: 1px;
 }
 
-.category:hover{
-    color: #e13d3d;
-    cursor: pointer;
+.category:hover {
+  color: #e13d3d;
+  cursor: pointer;
 }
 
-
-.post-text-container{
-  /* border: 1px solid green; */
+.post-text-container {
   line-height: 1.5em;
-  padding-right: 10px;
-  padding-left: 10px;
+  padding: 0 10px;
 }
 
-.post-text-container h2{
-    font-size: 2em;
-    font-weight: lighter;
-    letter-spacing: 2px;
-    margin-top: 12px;
-    margin-bottom: 12px;
-  }
-
-  .post-text-container h2:hover{
-    color: #e13d3d;
-    cursor: pointer;
-  }
-
-.post-text-container h5{
-    margin-bottom: 5px;
-    margin-top: 2px;
-    letter-spacing: 1px;
+.post-text-container h2 {
+  font-size: 2em;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  margin: 12px 0;
 }
 
-.post-image-container{
-    overflow: hidden;
-    height: 450px;
-    width: 100%;
-    margin-top: 10px;
-    padding-right: 15px;
+.post-text-container h2:hover {
+  color: #e13d3d;
+  cursor: pointer;
+}
+
+.post-text-container h5 {
+  margin: 2px 0 5px 0;
+  letter-spacing: 1px;
+}
+
+.post-image-container {
+  overflow: hidden;
+  height: 450px;
+  width: 100%;
+  margin-top: 10px;
+  padding-right: 15px;
 }
 
 .post-image-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-  }
-
-.post-text{
-    line-height: 1.5em;
-    padding-right: 10px;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
-.post-comments-line{
-    width: 100%; 
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid #e13d3d;
-    border-top: 1px solid #e13d3d;
-    margin-right: 15px;
-    margin-left: 10px;
+.post-text {
+  line-height: 1.5em;
+  padding-right: 10px;
 }
 
-.post-social-container{
-    display: flex;
-    flex-direction: row;
-    padding-left: 10px;
+.post-comments-line {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e13d3d;
+  border-top: 1px solid #e13d3d;
+  margin: 0 15px 0 10px;
 }
 
-.post-comments-container{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding-right: 35px;
+.post-social-container {
+  display: flex;
+  flex-direction: row;
+  padding-left: 10px;
 }
 
-.post-comments{
-    padding-right: 15px;
-    letter-spacing: 2px;
+.post-comments-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-right: 35px;
 }
 
-.post-comments-number{
-    font-size: 20px; 
-     color: #e13d3d;
+.post-comments {
+  padding-right: 15px;
+  letter-spacing: 2px;
+}
+
+.post-comments-number {
+  font-size: 20px;
+  color: #e13d3d;
 }
 
 .post-date {
- padding-right: 15px;
- font-size: 15px;
+  padding-right: 15px;
+  font-size: 15px;
 }
 
-.post-facebook-button{
-  padding-right: 9px;
-  padding-left: 9px;
+.post-facebook-button {
+  padding: 0 9px;
 }
 
-.post-facebook-button a{
-    text-decoration: none;
-    color:  #3b5998;
-    font-size: 18px;
-}
-.post-facebook a:hover{
-    cursor: pointer;
+.post-facebook-button a {
+  text-decoration: none;
+  color: #3b5998;
+  font-size: 18px;
 }
 
-.post-twitter-button{
-    padding-right: 9px;
-    padding-left: 9px;
+.post-facebook a:hover {
+  cursor: pointer;
 }
 
-.post-twitter-button a{
-    text-decoration: none;
-    color: #00aced;
-    font-size: 18px;
+.post-twitter-button {
+  padding: 0 9px;
 }
 
-.post-twitter-button a:hover{
-    cursor: pointer;
+.post-twitter-button a {
+  text-decoration: none;
+  color: #00aced;
+  font-size: 18px;
 }
 
-
-.post-pinterest-button{
-    padding-right: 9px;
-    padding-left: 9px;
+.post-twitter-button a:hover {
+  cursor: pointer;
 }
 
-.post-pinterest-button a{
-    text-decoration: none;
-    color: #cb2027;
-    font-size: 18px;
+.post-pinterest-button {
+  padding: 0 9px;
 }
 
-.post-pinterest-button a:hover{
-    cursor: pointer;
+.post-pinterest-button a {
+  text-decoration: none;
+  color: #cb2027;
+  font-size: 18px;
 }
 
-.post-author-name{
- color: #e13d3d;
+.post-pinterest-button a:hover {
+  cursor: pointer;
 }
 
-.post-author-name:hover{
-    cursor: pointer;
+.post-author-name {
+  color: #e13d3d;
+}
+
+.post-author-name:hover {
+  cursor: pointer;
 }

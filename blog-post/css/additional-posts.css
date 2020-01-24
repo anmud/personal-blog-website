@@ -1,92 +1,82 @@
-.additional-posts h2{
- margin-left: 10px;
- margin-top: 30px;
- font-weight: normal;
+.additional-posts h2 {
+  margin: 30px 0 25px 10px;
+  font-weight: normal;
 }
 
-.additional-cards{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-left: 7px;
+.additional-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-left: 7px;
 }
 
-.post-info{
- display: inline-block;
- /* flex-direction: column;
- align-items: center; */
- background-color: #fff;
- margin-right: 19px;
- /* margin-left: 10px;   */
- flex: 1;
+.post-info {
+  display: inline-block;
+  background-color: #fff;
+  margin-right: 19px;
+  flex: 1;
 }
 
-.add-image-container{
-    overflow: hidden;
-    height: 180px;
-    width: 255px;
-    margin-top: 0;
+.add-image-container {
+  overflow: hidden;
+  height: 180px;
+  width: 255px;
+  margin-top: 0;
 }
 
-
-.add-image-container img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.add-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.add-text{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+.add-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
-.add-label{
-    text-transform: uppercase;
-    font-size: 14px;
-    font-weight: bold;
-    margin: 10px;
-    margin-top: 18px;
-    letter-spacing: 1px;
-}
-.add-title{
-    font-size: 13px;
-    font-weight: normal;
-    margin: 10px;
-    margin-top: 0;
-    letter-spacing: 1px;
+.add-label {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 18px 10px 10px 10px;
+  letter-spacing: 1px;
 }
 
-
-.add-date{
-    text-transform: uppercase;
-    font-size: 13px;
-    font-weight: normal;
-    letter-spacing: 1px;
-    margin: 10px;
-    margin-top: 0;
+.add-title {
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0 10px 10px 10px;
+  letter-spacing: 1px;
 }
 
-.date-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+.add-date {
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: normal;
+  letter-spacing: 1px;
+  margin: 0 10px 10px 10px;
 }
 
+.date-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
 
 .comment-sign {
-    font-size: 13px;
-    font-weight: normal;
-    color:  #e13d3d;
-    text-align: right;
-    padding-left: 25px;
-    margin-left: 20px;
-    margin-top: 0;
+  font-size: 13px;
+  font-weight: normal;
+  color: #e13d3d;
+  text-align: right;
+  padding-left: 25px;
+  margin: 0 0 10px 20px;
 }
 
-.comment-sign i{
-    font-size: 13px;
-    font-weight: normal;
-    color:  #e13d3d;
+.comment-sign i {
+  font-size: 13px;
+  font-weight: normal;
+  color: #e13d3d;
 }
