@@ -4,6 +4,10 @@
     align-items: center;
 }
 
+.comments-card-container{
+    background-color: #fff;
+}
+
 .comment-button-container{
     display: flex;
     flex-direction: row;

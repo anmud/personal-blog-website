@@ -1,8 +1,8 @@
-@import "header.css";
-@import "footer.css";
-@import "nav.css";
-@import "post-card.css";
-@import "side-card.css";
+@import url(header.css);
+@import url(footer.css);
+@import url(nav.css);
+@import url(post-card.css);
+@import url(side-card.css);
 
 
  * {
