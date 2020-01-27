@@ -41,10 +41,21 @@ body {
 }
 
 /* Navbar*/
-.nav {
+
+#dws-menu,
+label {
+  display: none;
+}
+
+.menu {
   grid-area: nav;
   margin: 0 85px;
+  z-index: 100;
 }
+
+.leb-menu {
+  border-bottom: 1px solid #e13d3d;
+ }
 
 /* TODO:  Create two unequal columns that floats next to each other */
 /* Left column */
@@ -61,6 +72,7 @@ body {
 .side {
   grid-area: side;
   display: grid;
+  grid-gap: 15px;
   grid-template-columns: 1fr;
   grid-template-rows: minmax(100px, auto);
   height: fit-content;
@@ -94,4 +106,79 @@ body {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+}
+
+/* Small Screens */
+@media (min-width: 320px) and (max-width: 480px) {
+  .container {
+    display: grid;
+    margin: 0;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 1fr 1fr auto;
+    grid-gap: 10px;
+    grid-template-areas:
+      "header"
+      "nav"
+      "main"
+      "side"
+      "footer";
+  }
+
+  .header {
+    margin: auto;
+    text-align: center;
+  }
+
+  label {
+    display: block;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    border-right: 1px solid #fff;
+  }
+
+  label:hover {
+    cursor: pointer;
+  }
+
+  #dws-menu:checked ~ .menu {
+    margin: 0;
+  }
+
+  .menu {
+    position: absolute;
+    width: 200px;
+    margin-left: -200px; 
+    transition: all 0.5s;
+  }
+
+  .content {
+    margin: 0;
+  }
+
+  .post-card {
+    margin: 0;
+    padding: 0 12px 0 15px;
+  }
+
+  .side {
+    margin: 0 69px;
+    grid-gap: 25px;
+  }
+
+  .side-card {
+    margin: 9px;
+  }
+
+  .footer {
+    flex-direction: column;
+    padding: 25px;
+  }
+}
+
+/* Medium Screens */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    // rules for large screen
+  }
 }

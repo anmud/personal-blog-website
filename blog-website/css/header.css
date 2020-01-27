@@ -9,3 +9,18 @@
   word-spacing: 25px;
   color: black;
 }
+
+
+
+/* Small Screens */
+@media (min-width: 320px) and (max-width: 480px){
+  .naming{
+    font: 63px "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    padding-top: 35px;
+  font-weight: normal;
+  word-spacing: 2px;
+  }
+
+
+}

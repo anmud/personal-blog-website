@@ -117,3 +117,56 @@
   border-left: 1px solid #fff;
   height: 120px;
 }
+
+
+/* Small Screens */
+@media (min-width: 320px) and (max-width: 480px){
+  .v-line-2 {
+   display: none;
+  }
+
+  .category-link {
+    font-size: 12px;
+  }
+
+  .contact-link {
+    font-size: 12px;
+  }
+
+  .social-section {
+     margin-top: 25px;
+  }
+  
+  .social-section h3 {
+    font-size: 12px;
+  }
+
+  .facebook-button-ft a {
+    font-size: 17px;
+  }
+
+  .twitter-button-ft a {
+    font-size: 17px;
+  }
+
+  .pinterest-button-ft a {
+    font-size: 17px;
+  }
+
+  .instagram-button-ft a {
+    font-size: 17px;
+  }
+  
+  .v-line-ft {
+    height: 21px;
+  }
+
+
+}
+
+/* Medium Screens */
+@media (min-width:901px) {
+  .container {
+    // rules for large screen
+  }
+}

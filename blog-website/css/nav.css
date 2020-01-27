@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  list-style-type: none;
+  list-style: none;
   overflow: hidden;
   margin: 0;
   padding: 25px;
@@ -26,4 +26,23 @@ li a {
 
 li a:hover {
   color: #e13d3d;
+}
+
+/* Small Screens */
+@media (min-width: 320px) and (max-width: 480px){
+  .nav-items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+.indents {
+  padding: 0;
+}
+
+.underline {
+  border-bottom: 0 solid;
+}
+
+
 }

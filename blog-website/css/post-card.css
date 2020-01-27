@@ -149,7 +149,6 @@
   font-style: italic;
   background-color: #fff;
   padding: 14px 115px;
-  text-align: center;
   text-decoration: none;
   display: inline-block;
 }
@@ -157,4 +156,76 @@
 .load-content-button a:hover {
   color: #fff;
   background-color: #e13d3d;
+}
+
+/* Small Screens */
+@media (max-width: 768px) {
+  .label {
+    display: none;
+  }
+
+  .post-card h2 {
+    font-size: 31px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+  }
+
+  .post-card h5 {
+    font-size: 14px;
+  }
+
+  .image-container {
+    margin: 0;
+    height: 298px;
+  }
+
+  .post-short {
+    font-size: 16px;
+  }
+
+  .read-more-button {
+    font-size: 14px;
+  }
+
+  .comments-line {
+    font-size: 12px;
+  }
+
+  .date {
+    padding-right: 0;
+  }
+
+  .facebook {
+    padding: 0 4px;
+  }
+
+  .tweet {
+    padding: 0 4px;
+  }
+
+  .pin {
+    padding: 0 4px;
+  }
+
+  .comments-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .comments {
+    padding-right: 4px;
+  }
+
+  .comments-number {
+    font-size: 18px;
+  }
+
+  .load-content-button {
+    margin: 23px 96px 45px 94px;
+  }
+
+  .load-content-button a {
+    padding: 10px 100px;
+  }
 }
