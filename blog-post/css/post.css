@@ -20,7 +20,6 @@ body {
 
 .post-container {
   display: grid;
-  width: 100%;
   height: fit-content;
   grid-template-columns: repeat(3, 4fr);
   grid-template-rows: auto auto 4fr auto;
@@ -43,9 +42,19 @@ body {
 }
 
 /* Navbar*/
-.nav {
+#dws-menu,
+label {
+  display: none;
+}
+
+.menu {
   grid-area: nav;
-  margin: 0 85px 0;
+  margin: 0 85px;
+  z-index: 100;
+}
+
+.leb-menu {
+  border-bottom: 1px solid #e13d3d;
 }
 
 .post-content {
@@ -98,7 +107,7 @@ body {
   grid-template-columns: 1fr;
   grid-template-rows: minmax(100px, auto);
   height: fit-content;
-  margin: 0 79px 0 10px;;
+  margin: 0 79px 0 10px;
 }
 
 /* Footer */
@@ -118,4 +127,153 @@ body {
   margin: 28px;
   background-color: #fff;
   height: fit-content;
+}
+
+/* Small Screens */
+@media (min-width: 320px) and (max-width: 480px) {
+  .post-container {
+    grid-gap: 0;
+    height: fit-content;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 1fr auto auto; 
+    grid-template-areas:
+      "header"
+      "nav"
+      "post"
+      "side"
+      "footer";
+  }
+
+  .header {
+    margin: auto;
+    text-align: center;
+  }
+
+  label {
+    display: block;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    border-right: 1px solid #fff;
+  }
+
+  label:hover {
+    cursor: pointer;
+  }
+
+  #dws-menu:checked ~ .menu {
+    margin: 0;
+  }
+
+  .menu {
+    position: absolute;
+    width: 200px;
+    margin-left: -200px;
+    transition: all 0.5s;
+  }
+
+  .leb-menu {
+    width: 431px;
+  }
+
+
+  .post-content {
+    margin: 0 25px 0 0;
+  }
+
+  .post-body {
+    /* margin-right: 7em; */
+  }
+
+  .additional-posts {
+    margin: 0;
+  }
+
+  .comments-card {
+   margin: 0 15px;
+  }
+
+  .comments-card-container {
+    margin: 0 10em 0 0;
+  }
+  
+  .comment-form {
+    margin: 0 175px 0 0;
+  }
+
+  .side {
+    margin: 0 59px;
+    grid-gap: 25px;
+  }
+
+  .side-card {
+    margin: 15px;
+  }
+
+  .footer {
+    flex-direction: column;
+    padding: 25px;
+  }
+}
+
+/* Medium Screens */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .post-container {
+    grid-gap: 0;
+    height: fit-content;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 1fr auto auto; 
+    grid-template-areas:
+      "header"
+      "nav"
+      "post"
+      "side"
+      "footer";
+  }
+
+  .header {
+    margin: auto;
+    text-align: center;
+  }
+
+  .menu {
+    margin: 0;
+  }
+
+  .post-content {
+    margin: 0 25px 0 0;
+  }
+
+  .post-body {
+    margin-right: 7em; 
+  }
+
+  .additional-posts {
+    margin: 0;
+  }
+
+  .comments-card {
+   margin: 0 15px;
+  }
+
+  .comments-card-container {
+    margin: 0 10em 0 0;
+  }
+  
+  .comment-form {
+    margin: 0 175px 0 0;
+  }
+
+  .side {
+    margin: 0 199px;
+    grid-gap: 25px;
+  }
+
+  .side-card {
+    margin: 15px;
+  }
+
+  .footer {
+    padding: 25px;
+  }
 }

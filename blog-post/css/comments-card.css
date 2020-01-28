@@ -85,3 +85,74 @@
 .reply-sign a:hover {
   cursor: pointer;
 }
+
+/*Small screens*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .comment-button-container{
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .personal-comment-sign {
+    margin: 35px 81em 15px 13px;
+  }
+
+  .comment-button {
+    margin: 0 68em 15px 27px;
+  }
+
+  .comment-button a {
+    padding: 15px 130px;
+    display: block;
+    font-size: 13px;
+  }
+
+  .horisontal-line {
+    width: 365px;
+    margin-bottom: 7px;
+  }
+
+  .comment-text {
+    margin: 0 60em 0 15px;
+    padding-left: 10px;
+  }
+  
+  .comment-body {
+    padding-right: 75px;
+    font-size: 16px;
+  }
+}
+
+/* Medium Screens */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  .personal-comment-sign {
+    margin: 35px 12em 15px 13px;
+  }
+
+  .comment-button {
+    margin: 0 46em 0 10px;
+  }
+
+  .comment-button a {
+    padding: 15px 67px;
+    display: block;
+    font-size: 13px;
+  }
+
+  .horisontal-line {
+    width: 645px;
+    margin-bottom: 7px;
+  }
+
+  .comment-text {
+    margin: 0 39em 0 15px;
+    padding-left: 10px;
+  }
+  
+  .comment-body {
+    padding-right: 75px;
+    font-size: 15px;
+  }
+}

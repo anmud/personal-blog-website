@@ -14,16 +14,20 @@
 .post-text-container {
   line-height: 1.5em;
   padding: 0 10px;
+  overflow: hidden;
 }
 
-.post-text-container h2 {
+.post-name{
+  padding: 12px 0;
+}
+
+.post-name h2{
   font-size: 2em;
   font-weight: lighter;
   letter-spacing: 2px;
-  margin: 12px 0;
 }
 
-.post-text-container h2:hover {
+.post-name h2:hover {
   color: #e13d3d;
   cursor: pointer;
 }
@@ -139,4 +143,130 @@
 
 .post-author-name:hover {
   cursor: pointer;
+}
+
+/* Small Screens */
+@media (min-width: 320px) and (max-width: 480px) {
+  .category {
+   display: none;
+  }
+
+  .post-text-container {
+    line-height: 1em;
+    margin: 0 19.5em 0 0;
+    /* padding: 0 25px 0 0; */
+  }
+  
+  .post-name{
+    margin: 0 35em 0 0 ; 
+    padding:  12px 35px 10px 0;
+  }
+
+  .post-name h2 {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    padding-right: 55px;
+  
+  }
+
+  .post-text-container h5 {
+    font-size: 14px;
+  }
+
+  .post-text {
+    margin: 10px 58em 0 5px;
+    padding: 0 0 0 7px;
+    font-size: 15px;
+  }
+  
+  .post-image-container {
+    margin: 10px 28px 0 0;
+    width: 443px;
+    height: 299px;
+  }
+  
+  .post-comments-line {
+    width: 454px;
+    margin: 0;
+  }
+
+  .post-date {
+    font-size: 14px;
+  }
+
+  .post-social-container {
+    padding-left: 5px;
+    font-size: 14px;
+  }
+  
+  .post-comments-container {
+    padding-right: 21px;
+  }
+  
+  .post-comments {
+    font-size: 14px;
+    padding-right: 5px;
+    letter-spacing: 1px;
+  }
+}
+
+/* Medium Screens */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .post-text-container {
+    line-height: 1em;
+  }
+  
+  .post-name{
+    margin: 0 35em 0 0 ; 
+    padding:  12px 35px 10px 0;
+  }
+
+  .post-name h2 {
+    font-size: 34px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    padding-right: 55px;
+  
+  }
+
+  .post-text-container h5 {
+    font-size: 14px;
+  }
+
+  .post-text {
+    margin: 10px 43em 0 0;
+    padding: 0 10px 0 7px;
+    font-size: 17px;
+  }
+
+  .post-image-container {
+    margin: 0;
+    width: 721px;
+    height: 399px;
+  }
+  
+  .post-comments-line {
+    margin: 0;
+  }
+
+  .post-date {
+    font-size: 14px;
+  }
+
+  .post-social-container {
+    padding-left: 15px;
+    font-size: 14px;
+  }
+  
+  .post-comments-container {
+    margin-right: 25px;
+    border: 1px solid blue;
+  }
+  
+  .post-comments {
+    font-size: 14px;
+    padding-right: 5px;
+    letter-spacing: 1px;
+  }
 }

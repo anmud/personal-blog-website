@@ -176,9 +176,52 @@ label {
   }
 }
 
+
 /* Medium Screens */
 @media (min-width: 768px) and (max-width: 1024px) {
   .container {
-    // rules for large screen
+    display: grid;
+    margin: 0;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 1fr 1fr auto;
+    grid-gap: 10px;
+    grid-template-areas:
+      "header"
+      "nav"
+      "main"
+      "side"
+      "footer";
+  }
+
+  .header {
+    margin: auto;
+    text-align: center;
+  }
+
+  .menu {
+    margin: 0;
+  }
+
+
+  .content {
+    margin: 0;
+  }
+
+  .post-card {
+    margin: 0 25px;
+    padding: 0 12px 0 15px;
+  }
+
+  .side {
+    margin: 0 189px;
+    grid-gap: 25px;
+  }
+
+  .side-card {
+    margin: 9px;
+  }
+
+  .footer {
+    padding: 25px;
   }
 }

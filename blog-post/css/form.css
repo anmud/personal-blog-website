@@ -66,3 +66,61 @@ input[type="submit"]:hover {
   color: #fff;
   background-color: #e13d3d;
 }
+
+/* Small Screens */
+@media (min-width: 320px) and (max-width: 480px) {
+  .form-container {
+    font-size: 12px;
+    margin: 25px 825px 0 15px;
+  }
+
+  input[type="text"] {
+    width: 374px;
+    padding: 10px 25px 0 15px;
+    margin-right: 200px;
+  }
+
+  textarea {
+    width: 374px;
+    height: 230px;
+    padding: 12px 10px;
+  }
+
+  input[type="submit"] {
+    padding: 16px 32px;
+    font-size: 12px;
+    margin: 15px 55px 45px 115px;
+  }
+
+  label {
+    margin-top: 10px;
+  }
+}
+
+/* Medium Screens */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .form-container {
+    font-size: 14px;
+    margin: 25px 517px 0 19px;
+  }
+
+  input[type="text"] {
+    width: 642px;
+    padding: 10px 25px 0 15px;
+    margin-right: 200px;
+  }
+
+  textarea {
+    width: 642px;
+    height: 230px;
+    padding: 12px 10px;
+  }
+
+  input[type="submit"] {
+    margin: 15px 25px 45px 465px;
+  } 
+
+  label {
+    margin-top: 10px;
+  }
+}
