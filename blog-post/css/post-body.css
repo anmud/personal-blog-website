@@ -17,17 +17,15 @@
   overflow: hidden;
 }
 
+
 .post-name{
   padding: 12px 0;
-}
-
-.post-name h2{
   font-size: 2em;
   font-weight: lighter;
   letter-spacing: 2px;
 }
 
-.post-name h2:hover {
+.post-name:hover {
   color: #e13d3d;
   cursor: pointer;
 }
@@ -146,73 +144,95 @@
 }
 
 /* Small Screens */
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 600px) {
   .category {
-   display: none;
+   font-size: 11px;
+   padding: 0;
   }
 
   .post-text-container {
     line-height: 1em;
-    margin: 0 19.5em 0 0;
+    margin: 0;
     /* padding: 0 25px 0 0; */
   }
   
-  .post-name{
-    margin: 0 35em 0 0 ; 
-    padding:  12px 35px 10px 0;
-  }
 
-  .post-name h2 {
+  .post-name{
     font-size: 20px;
     font-weight: 500;
     letter-spacing: 0.08em;
-    padding-right: 55px;
-  
+    margin: 0; 
+    padding-right: 5px;
+    line-height: normal;
   }
 
   .post-text-container h5 {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   .post-text {
-    margin: 10px 58em 0 5px;
-    padding: 0 0 0 7px;
+    /* margin: 10px 58em 0 5px;
+    padding: 0 0 0 7px; */
     font-size: 15px;
+    width: 100vw;
+    position: relative;
+    padding-right: 25px;
   }
   
   .post-image-container {
-    margin: 10px 28px 0 0;
-    width: 443px;
-    height: 299px;
+    /* margin: 0; */
+    /* margin: 10px 28px 0 0; */
+    /* width: 443px;
+    height: 299px; */
+    width: 100vw;
+    margin: 0;
+    position: relative;
   }
   
   .post-comments-line {
-    width: 454px;
+    /* width: 454px; */
+    flex-wrap: wrap;
     margin: 0;
+    width: 100vw;
+    position: relative;
   }
 
   .post-date {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   .post-social-container {
-    padding-left: 5px;
+    /* padding-left: 5px; */
+    font-size: 12px;
+  }
+
+  .post-facebook-button a {
+    font-size: 14px;
+  }
+
+  .post-pinterest-button a {
+    font-size: 14px;
+  }
+
+  .post-twitter-button a {
     font-size: 14px;
   }
   
   .post-comments-container {
-    padding-right: 21px;
+    /* padding-right: 21px; */
+    margin: 0;
+    padding-left: 95px;
   }
   
   .post-comments {
-    font-size: 14px;
-    padding-right: 5px;
+    font-size: 12px;
+    /* padding-right: 5px; */
     letter-spacing: 1px;
   }
 }
 
 /* Medium Screens */
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 800px) {
   .post-text-container {
     line-height: 1em;
   }

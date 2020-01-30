@@ -138,17 +138,17 @@
 }
 
 .load-content-button {
-  margin: 0 217px 55px 324px;
-  border: 1px solid #e13d3d;
-  background-color: #fff;
+  margin: auto;
 }
 
 .load-content-button a {
+  border: 1px solid #e13d3d;
+  background-color: #fff;
   color: #e13d3d;
   text-align: center;
   font-style: italic;
-  background-color: #fff;
-  padding: 14px 115px;
+  padding: 15px 115px;
+  margin: auto;
   text-decoration: none;
   display: inline-block;
 }
@@ -159,7 +159,7 @@
 }
 
 /* Small Screens */
-@media (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 600px) {
   .label {
     display: none;
   }
@@ -176,7 +176,7 @@
 
   .image-container {
     margin: 0;
-    height: 298px;
+    /* height: 298px; */
   }
 
   .post-short {
@@ -189,10 +189,15 @@
 
   .comments-line {
     font-size: 12px;
+    margin: auto;
+  }
+
+  .social-container {
+    margin: auto;
   }
 
   .date {
-    padding-right: 0;
+    padding-right: auto;
   }
 
   .facebook {
@@ -211,6 +216,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin: auto;
   }
 
   .comments {
@@ -222,7 +228,8 @@
   }
 
   .load-content-button {
-    margin: 23px 96px 45px 94px;
+    /* margin: 23px 56px 25px 155px; */
+    margin: auto;
   }
 
   .load-content-button a {
@@ -231,13 +238,13 @@
 }
 
 /* Medium Screens */
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 992px)  {
   .label {
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .post-card h2 {
-    font-size: 31px;
+    font-size: 35px;
     font-weight: 500;
     letter-spacing: 0.08em;
   }
@@ -247,12 +254,13 @@
   }
 
   .image-container {
-    margin: 0;
-    height: 335px;
+    /* width: 727px; */
+    /* height: 425px; */
   }
 
   .post-short {
     font-size: 16px;
+    padding-right: 15px;
   }
 
   .read-more-button {
@@ -261,6 +269,7 @@
 
   .comments-line {
     font-size: 14px;
+    width: 98%;
   }
 
   .date {
@@ -294,10 +303,11 @@
   }
 
   .load-content-button {
-    margin: 23px 165px 45px 165px;
+    margin: auto;
   }
 
   .load-content-button a {
-    padding: 10px 165px;
+    padding: 15px 125px;
+    margin: auto;
   }
 }

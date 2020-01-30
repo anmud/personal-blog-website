@@ -68,22 +68,30 @@ input[type="submit"]:hover {
 }
 
 /* Small Screens */
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 600px) {
   .form-container {
     font-size: 12px;
-    margin: 25px 825px 0 15px;
+    /* margin: 25px 825px 0 15px; */
+    margin: 0;
+    width: 100vw;
+    position: relative;
+    padding: 0 15px;
   }
 
   input[type="text"] {
-    width: 374px;
+    /* width: 374px;
     padding: 10px 25px 0 15px;
-    margin-right: 200px;
+    margin-right: 200px; */
+    margin: 0;
+    padding:  15px;
   }
 
   textarea {
-    width: 374px;
+    /* width: 374px;
     height: 230px;
-    padding: 12px 10px;
+    padding: 12px 10px; */
+    margin: 0;
+    padding: 0 15px;
   }
 
   input[type="submit"] {
@@ -98,7 +106,7 @@ input[type="submit"]:hover {
 }
 
 /* Medium Screens */
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 800px) {
   .form-container {
     font-size: 14px;
     margin: 25px 517px 0 19px;

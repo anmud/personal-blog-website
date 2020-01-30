@@ -60,28 +60,31 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin: 8px 15px 10px 15px;
+  margin: 5px 15px 5px 15px;
 }
 
 .numbers {
-  margin: 0 20px 15px 10px;
+  margin: 0 20px 25px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .numbers p {
   font-size: 40px;
   color: #d8d8d8;
-  margin-bottom: 33px;
+  margin-bottom: 35px;
 }
 
 .named-posts {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  margin-top: 22px;
+  margin-top: 20px;
 }
 
 .named-posts p {
-  margin-bottom: 23px;
+  margin-bottom: 15px;
   line-height: 1.6;
 }
 
@@ -192,7 +195,7 @@
 }
 
 /* Small Screens */
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 600px) {
   .popular-post h3 {
     font-size: 17px;
   }
@@ -204,12 +207,67 @@
 
   .numbers p {
     font-size: 37px;
-    margin-bottom: 23px;
+    margin-bottom: 13px;
   }
 
   .named-posts p {
     line-height: 1.2;
     font-size: 15px;
+  }
+
+  .load-more-button a {
+    font-size: 16px;
+  }
+
+  .social h3 {
+    font-size: 16px;
+  }
+
+  .v-line {
+    height: 21px;
+  }
+
+  .facebook-button a {
+    font-size: 17px;
+  }
+
+  .twitter-button a {
+    font-size: 17px;
+  }
+
+  .pinterest-button a {
+    font-size: 17px;
+  }
+
+  .instagram-button a {
+    font-size: 17px;
+  }
+
+  .contact-me-button {
+    font-size: 16px;
+  }
+}
+
+/* Medium Screens */
+@media  (min-width: 768px) and (max-width: 992px) {
+  .popular-post h3 {
+    font-size: 17px;
+  }
+
+  .popular-post h2 {
+    letter-spacing: 1px;
+    font-size: 16px;
+  }
+
+  .numbers p {
+    font-size: 37px;
+    margin-bottom: 5px;
+  }
+
+  .named-posts p {
+    line-height: 1.2;
+    font-size: 15px;
+     margin-bottom: 33px;
   }
 
   .load-more-button a {

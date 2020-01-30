@@ -16,11 +16,14 @@ body {
   font-family: Arial;
   background: #fbf8f4;
   color: #666;
+  overflow-x: hidden;
 }
 
 .post-container {
   display: grid;
+  width: 100%;
   height: fit-content;
+  margin: auto;
   grid-template-columns: repeat(3, 4fr);
   grid-template-rows: auto auto 4fr auto;
   grid-gap: 10px;
@@ -130,23 +133,28 @@ label {
 }
 
 /* Small Screens */
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 600px) {
   .post-container {
-    grid-gap: 0;
+    margin: auto;
+    display: grid;
     height: fit-content;
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto 1fr auto auto; 
+    grid-template-rows: auto auto 1fr 1fr auto; 
     grid-template-areas:
       "header"
       "nav"
       "post"
       "side"
       "footer";
+      border: 1px solid yellow;
+      overflow: hidden;
   }
 
   .header {
-    margin: auto;
+    margin: 0;
     text-align: center;
+    width: 100vw;
+    position: relative;
   }
 
   label {
@@ -154,56 +162,73 @@ label {
     width: 30px;
     height: 30px;
     padding: 10px;
-    border-right: 1px solid #fff;
   }
 
   label:hover {
     cursor: pointer;
   }
-
+.leb-menu {
+  width: 100vw;
+    position: relative;
+    margin: 0;
+}
   #dws-menu:checked ~ .menu {
     margin: 0;
   }
 
   .menu {
     position: absolute;
-    width: 200px;
-    margin-left: -200px;
+    width: 200px; 
+    margin-left: -200px; 
     transition: all 0.5s;
   }
 
-  .leb-menu {
-    width: 431px;
-  }
-
-
   .post-content {
-    margin: 0 25px 0 0;
+    /* margin: 0 25px 0 0; */
+    margin: 0 150px 0 0;
+    border: 1px solid green;
+    width: 100vw;
+    position: relative;
   }
 
   .post-body {
     /* margin-right: 7em; */
+    margin: 0;
+    width: 100vw;
+    position: relative;
   }
 
   .additional-posts {
     margin: 0;
+    border: 1px solid red;
+    width: 100vw;
+    position: relative;
   }
 
   .comments-card {
-   margin: 0 15px;
+   margin: 0;
+   width: 100vw;
+   position: relative;
   }
 
   .comments-card-container {
-    margin: 0 10em 0 0;
+    margin: 0;
+    border: 1px solid blue;
+    width: 100vw;
+    position: relative;
   }
   
   .comment-form {
-    margin: 0 175px 0 0;
+    margin: 0;
+    width: 100vw;
+    position: relative;
   }
 
   .side {
-    margin: 0 59px;
+    /* margin: 0 115px 0 0 ; */
     grid-gap: 25px;
+    width: 100vw;
+    position: relative;
   }
 
   .side-card {
@@ -212,12 +237,14 @@ label {
 
   .footer {
     flex-direction: column;
-    padding: 25px;
+    /* padding: 25px; */
+    width: 100vw;
+    position: relative;
   }
 }
 
 /* Medium Screens */
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 800px) {
   .post-container {
     grid-gap: 0;
     height: fit-content;

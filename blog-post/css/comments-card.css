@@ -87,45 +87,66 @@
 }
 
 /*Small screens*/
-
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 600px) {
   .comment-button-container{
     flex-direction: column;
     justify-content: flex-start;
+    width: 100vw;
+    position: relative;
   }
 
   .personal-comment-sign {
-    margin: 35px 81em 15px 13px;
+    /* margin: 35px 81em 15px 13px; */
+    margin: 0;
   }
 
   .comment-button {
-    margin: 0 68em 15px 27px;
+    margin: 5px 15px;
   }
 
   .comment-button a {
-    padding: 15px 130px;
+    padding: 15px 30px;
     display: block;
     font-size: 13px;
   }
 
-  .horisontal-line {
-    width: 365px;
-    margin-bottom: 7px;
+  post-personal-comments-container {
+    width: 100vw;
+    position: relative;
   }
 
+  .horisontal-line {
+    /* width: 365px; */
+    /* margin-bottom: 7px; */
+    margin: 0;
+    width: 100vw;
+    position: relative;
+  }
+
+ .personal-comment {
+  width: 100vw;
+  position: relative;
+ }
+
   .comment-text {
-    margin: 0 60em 0 15px;
-    padding-left: 10px;
+    /* margin: 0 60em 0 15px;
+    padding-left: 10px; */
+    margin: 0;
   }
   
   .comment-body {
     padding-right: 75px;
     font-size: 16px;
   }
+
+  personal-comment-date {
+    width: 100vw;
+    position: relative;
+  }
 }
 
 /* Medium Screens */
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 800px) {
 
   .personal-comment-sign {
     margin: 35px 12em 15px 13px;

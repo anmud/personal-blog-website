@@ -1,8 +1,8 @@
 .naming {
-  margin: 0;
+  margin: auto;
   padding-top: 15px;
   font: 84px "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-weight: 200;
   text-transform: uppercase;
   letter-spacing: 5px;
@@ -10,17 +10,24 @@
   color: black;
 }
 
-
-
 /* Small Screens */
-@media (min-width: 320px) and (max-width: 480px){
-  .naming{
-    font: 63px "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-    padding-top: 35px;
+@media (min-width: 320px) and (max-width: 600px){
+.naming {
+  font: 33px "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+  "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding-top: 35px;
   font-weight: normal;
   word-spacing: 2px;
-  }
+}
+}
 
-
+/* Medium Screens */
+@media (min-width: 768px) and (max-width: 992px) {
+.naming {
+  font: 63px "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+  "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding-top: 35px;
+  font-weight: normal;
+  word-spacing: 2px;
+}
 }
