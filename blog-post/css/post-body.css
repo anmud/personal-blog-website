@@ -1,8 +1,8 @@
 .category {
   text-transform: uppercase;
-  font-size: 11px;
+  font-size: 15px;
   font-weight: bold;
-  margin: 5px;
+  margin-top: 10px;
   letter-spacing: 1px;
 }
 
@@ -18,10 +18,12 @@
 }
 
 .post-name {
+  margin: 0;
   padding: 12px 0;
-  font-size: 2em;
+  font-size: 2.5em;
   font-weight: lighter;
   letter-spacing: 2px;
+  line-height: normal;
 }
 
 .post-name:hover {
@@ -30,40 +32,38 @@
 }
 
 .post-text-container h5 {
-  margin: 2px 0 5px 0;
+  margin: 0 0 5px 0;
   letter-spacing: 1px;
+  font-size: 13px;
 }
 
 .post-image-container {
   overflow: hidden;
   height: 450px;
-  width: 100%;
+  width: 95%;
   margin-top: 10px;
-  /* padding-right: 15px; */
 }
 
 .post-image-container img {
   width: 100%;
   height: 100%;
-  /* object-fit: cover; */
   object-fit: fill;
 }
 
-
 .post-text {
   line-height: 1.5em;
-  padding-right: 10px;
+  padding-right: 25px;
 }
 
 .post-comments-line {
-  width: 100%;
+  width: 95%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #e13d3d;
   border-top: 1px solid #e13d3d;
-  margin: 0 15px 0 10px;
+  margin: 0 25px 0 10px;
 }
 
 .post-social-container {
@@ -189,7 +189,7 @@
     object-fit: fill;
     width: 100vw;
     height: 100vw;
-  } 
+  }
 
   .post-comments-line {
     flex-wrap: wrap;
@@ -258,24 +258,8 @@
 
   .post-text {
     font-size: 14px;
-    /* width: 100vw;
-    position: relative; */
     padding: 0 25px 0 5px;
   }
-
-  /* .post-image-container {
-    height: 100vw;
-    width: 100vw;
-    position: relative;
-    margin: 0;
-    padding: 0 7px;
-  }
-
-  .post-image-container img {
-    object-fit: fill;
-    width: 100%;
-    height: 100%;
-  } */
 
   .post-comments-line {
     margin: 0;

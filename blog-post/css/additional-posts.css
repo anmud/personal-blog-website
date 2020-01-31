@@ -116,8 +116,7 @@
 
 /* Medium Screens */
 @media (min-width: 768px) and (max-width: 800px) {
-  
-.additional-cards {
-  margin: 0 0 7px 7px;
-}
+  .additional-cards {
+    margin: 0 0 7px 7px;
+  }
 }

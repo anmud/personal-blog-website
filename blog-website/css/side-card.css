@@ -249,7 +249,7 @@
 }
 
 /* Medium Screens */
-@media  (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 992px) {
   .popular-post h3 {
     font-size: 17px;
   }
@@ -267,7 +267,7 @@
   .named-posts p {
     line-height: 1.2;
     font-size: 15px;
-     margin-bottom: 33px;
+    margin-bottom: 33px;
   }
 
   .load-more-button a {

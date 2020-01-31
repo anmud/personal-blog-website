@@ -1,6 +1,6 @@
 .label {
   text-transform: uppercase;
-  font-size: 11px;
+  font-size: 15px;
   font-weight: bold;
   margin: 5px;
   letter-spacing: 1px;
@@ -12,7 +12,7 @@
 }
 
 .post-card h2 {
-  font-size: 2em;
+  font-size: 2.5em;
   font-weight: lighter;
   letter-spacing: 2px;
   margin: 12px 0;
@@ -91,6 +91,7 @@
   text-decoration: none;
   color: #e13d3d;
 }
+
 .facebook:hover {
   cursor: pointer;
 }
@@ -127,6 +128,7 @@
   flex-direction: row;
   align-items: center;
 }
+
 .comments {
   padding-right: 10px;
   letter-spacing: 2px;
@@ -176,7 +178,8 @@
 
   .image-container {
     margin: 0;
-    /* height: 298px; */
+    height: 100%;
+    width: 100vw;
   }
 
   .post-short {
@@ -188,8 +191,10 @@
   }
 
   .comments-line {
+    width: 100vw;
+    position: relative;
     font-size: 12px;
-    margin: auto;
+    margin: 0;
   }
 
   .social-container {
@@ -228,8 +233,7 @@
   }
 
   .load-content-button {
-    /* margin: 23px 56px 25px 155px; */
-    margin: auto;
+    margin-top: 10px;
   }
 
   .load-content-button a {
@@ -238,7 +242,7 @@
 }
 
 /* Medium Screens */
-@media (min-width: 768px) and (max-width: 992px)  {
+@media (min-width: 768px) and (max-width: 992px) {
   .label {
     font-size: 12px;
   }
@@ -251,11 +255,6 @@
 
   .post-card h5 {
     font-size: 14px;
-  }
-
-  .image-container {
-    /* width: 727px; */
-    /* height: 425px; */
   }
 
   .post-short {

@@ -113,7 +113,7 @@ input[type="submit"]:hover {
     font-size: 12px;
     margin: 0;
     width: 100vw;
-    position: relative; 
+    position: relative;
     padding: 0 15px;
   }
 
@@ -122,7 +122,7 @@ input[type="submit"]:hover {
     margin: 0;
     padding: 15px;
     box-sizing: border-box;
-    resize: vertical; 
+    resize: vertical;
   }
 
   textarea {
