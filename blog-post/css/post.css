@@ -135,19 +135,20 @@ label {
 /* Small Screens */
 @media (min-width: 320px) and (max-width: 600px) {
   .post-container {
-    margin: auto;
+    width: 100vw;
+    margin: 0;
     display: grid;
     height: fit-content;
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto 1fr 1fr auto; 
+    grid-template-rows: auto auto auto auto auto;
     grid-template-areas:
       "header"
       "nav"
       "post"
       "side"
       "footer";
-      border: 1px solid yellow;
-      overflow: hidden;
+    overflow: hidden;
+    box-sizing: border-box;
   }
 
   .header {
@@ -167,32 +168,33 @@ label {
   label:hover {
     cursor: pointer;
   }
-.leb-menu {
-  width: 100vw;
+
+  .leb-menu {
+    width: 100vw;
     position: relative;
     margin: 0;
-}
+    padding: 0;
+  }
+
   #dws-menu:checked ~ .menu {
     margin: 0;
   }
 
   .menu {
     position: absolute;
-    width: 200px; 
-    margin-left: -200px; 
+    width: 200px;
+    margin-left: -200px;
     transition: all 0.5s;
   }
 
   .post-content {
-    /* margin: 0 25px 0 0; */
-    margin: 0 150px 0 0;
-    border: 1px solid green;
+    margin: 0;
+    padding: 0;
     width: 100vw;
     position: relative;
   }
 
   .post-body {
-    /* margin-right: 7em; */
     margin: 0;
     width: 100vw;
     position: relative;
@@ -200,24 +202,22 @@ label {
 
   .additional-posts {
     margin: 0;
-    border: 1px solid red;
     width: 100vw;
     position: relative;
   }
 
   .comments-card {
-   margin: 0;
-   width: 100vw;
-   position: relative;
+    margin: 0;
+    width: 100vw;
+    position: relative;
   }
 
   .comments-card-container {
     margin: 0;
-    border: 1px solid blue;
     width: 100vw;
     position: relative;
   }
-  
+
   .comment-form {
     margin: 0;
     width: 100vw;
@@ -225,10 +225,8 @@ label {
   }
 
   .side {
-    /* margin: 0 115px 0 0 ; */
-    grid-gap: 25px;
-    width: 100vw;
-    position: relative;
+    grid-gap: 5px;
+    margin: 0 79px;
   }
 
   .side-card {
@@ -237,58 +235,99 @@ label {
 
   .footer {
     flex-direction: column;
-    /* padding: 25px; */
     width: 100vw;
     position: relative;
   }
 }
 
 /* Medium Screens */
-@media (min-width: 769px) and (max-width: 800px) {
+@media (min-width: 768px) and (max-width: 800px) {
   .post-container {
+    width: 100%;
     grid-gap: 0;
     height: fit-content;
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto 1fr auto auto; 
+    grid-template-rows: auto auto 1fr auto auto;
     grid-template-areas:
       "header"
       "nav"
       "post"
       "side"
       "footer";
+    overflow: hidden;
+    box-sizing: border-box;
   }
 
   .header {
-    margin: auto;
+    margin: 0;
     text-align: center;
+    width: 100vw;
+    position: relative;
+  }
+
+  label {
+    display: block;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+  }
+
+  label:hover {
+    cursor: pointer;
+  }
+
+  .leb-menu {
+    width: 100vw;
+    position: relative;
+    margin: 0;
+    padding: 0;
+  }
+
+  #dws-menu:checked ~ .menu {
+    margin: 0;
   }
 
   .menu {
-    margin: 0;
+    position: absolute;
+    width: 200px;
+    margin-left: -200px;
+    transition: all 0.5s;
   }
 
   .post-content {
     margin: 0 25px 0 0;
+    width: 100vw;
+    position: relative;
   }
 
   .post-body {
-    margin-right: 7em; 
+    /* margin-right: 7em; */
+    width: 100vw;
+    position: relative;
   }
 
   .additional-posts {
     margin: 0;
+    width: 100vw;
+    position: relative;
   }
 
   .comments-card {
-   margin: 0 15px;
+    margin-top: 10px;
+    width: 100vw;
+    position: relative;
   }
 
   .comments-card-container {
-    margin: 0 10em 0 0;
+    margin: 0;
+    width: 100vw;
+    position: relative;
   }
-  
+
   .comment-form {
-    margin: 0 175px 0 0;
+    margin: 0;
+    width: 100vw;
+    position: relative;
   }
 
   .side {
@@ -302,5 +341,7 @@ label {
 
   .footer {
     padding: 25px;
+    width: 100vw;
+    position: relative;
   }
 }

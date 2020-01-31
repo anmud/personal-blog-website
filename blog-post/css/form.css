@@ -33,7 +33,7 @@ textarea {
   resize: none;
 }
 
-label {
+.form-label {
   margin-top: 18px;
 }
 
@@ -71,7 +71,6 @@ input[type="submit"]:hover {
 @media (min-width: 320px) and (max-width: 600px) {
   .form-container {
     font-size: 12px;
-    /* margin: 25px 825px 0 15px; */
     margin: 0;
     width: 100vw;
     position: relative;
@@ -79,19 +78,19 @@ input[type="submit"]:hover {
   }
 
   input[type="text"] {
-    /* width: 374px;
-    padding: 10px 25px 0 15px;
-    margin-right: 200px; */
+    width: 100%;
     margin: 0;
-    padding:  15px;
+    padding: 15px;
+    box-sizing: border-box;
+    resize: vertical;
   }
 
   textarea {
-    /* width: 374px;
-    height: 230px;
-    padding: 12px 10px; */
+    width: 100%;
     margin: 0;
     padding: 0 15px;
+    box-sizing: border-box;
+    resize: vertical;
   }
 
   input[type="submit"] {
@@ -100,35 +99,50 @@ input[type="submit"]:hover {
     margin: 15px 55px 45px 115px;
   }
 
-  label {
-    margin-top: 10px;
+  .form-label {
+    margin-top: 7px;
+    padding-left: 0;
+    font-size: 13px;
+    display: inline-block;
   }
 }
 
 /* Medium Screens */
-@media (min-width: 769px) and (max-width: 800px) {
+@media (min-width: 768px) and (max-width: 800px) {
   .form-container {
-    font-size: 14px;
-    margin: 25px 517px 0 19px;
+    font-size: 12px;
+    margin: 0;
+    width: 100vw;
+    position: relative; 
+    padding: 0 15px;
   }
 
   input[type="text"] {
-    width: 642px;
-    padding: 10px 25px 0 15px;
-    margin-right: 200px;
+    width: 98%;
+    margin: 0;
+    padding: 15px;
+    box-sizing: border-box;
+    resize: vertical; 
   }
 
   textarea {
-    width: 642px;
-    height: 230px;
-    padding: 12px 10px;
+    width: 98%;
+    margin: 0;
+    padding: 0 15px;
+    box-sizing: border-box;
+    resize: vertical;
   }
 
   input[type="submit"] {
-    margin: 15px 25px 45px 465px;
-  } 
+    padding: 16px 32px;
+    font-size: 12px;
+    margin: 10px 0 10px 250px;
+  }
 
-  label {
-    margin-top: 10px;
+  .form-label {
+    margin-top: 7px;
+    padding-left: 0;
+    font-size: 13px;
+    display: inline-block;
   }
 }
