@@ -152,7 +152,7 @@
   padding: 15px 115px;
   margin: auto;
   text-decoration: none;
-  display: inline-block;
+  display: inline-block; 
 }
 
 .load-content-button a:hover {
@@ -163,17 +163,18 @@
 /* Small Screens */
 @media (min-width: 320px) and (max-width: 600px) {
   .label {
-    display: none;
+      font-size: 11px;
+      margin: 5px 0;
   }
 
   .post-card h2 {
-    font-size: 31px;
+    font-size: 25px;
     font-weight: 500;
     letter-spacing: 0.08em;
   }
 
   .post-card h5 {
-    font-size: 14px;
+    font-size: 13px;
   }
 
   .image-container {
@@ -183,61 +184,56 @@
   }
 
   .post-short {
-    font-size: 16px;
-  }
+    font-size: 14px;
+    padding-right: 2.5em;
+  } 
 
   .read-more-button {
     font-size: 14px;
   }
 
   .comments-line {
-    width: 100vw;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
     position: relative;
-    font-size: 12px;
+    font-size: 11px;
     margin: 0;
   }
 
+
   .social-container {
-    margin: auto;
+    flex-wrap: wrap;
+    margin: 0;
   }
 
   .date {
-    padding-right: auto;
+    padding: 0 2px;
   }
 
   .facebook {
-    padding: 0 4px;
+    padding: 0 2px;
   }
 
   .tweet {
-    padding: 0 4px;
+    padding: 0 2px;
   }
 
   .pin {
-    padding: 0 4px;
+    padding: 0 2px;
   }
 
   .comments-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin: auto;
+    display: none;
   }
 
-  .comments {
-    padding-right: 4px;
-  }
-
-  .comments-number {
-    font-size: 18px;
-  }
 
   .load-content-button {
-    margin-top: 10px;
+    margin: 10px auto;
   }
 
   .load-content-button a {
-    padding: 10px 100px;
+    padding: 10px 75px;
   }
 }
 

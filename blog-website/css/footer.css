@@ -1,8 +1,16 @@
+.link-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}  /*section was added*/
+ 
 .category-link {
   display: flex;
   flex-direction: column;
   align-items: center;
   font-size: 14px;
+  margin: 10px 55px;  /*margin was added*/
 }
 
 .category-link a {
@@ -20,6 +28,7 @@
   flex-direction: column;
   align-items: center;
   font-size: 14px;
+  margin: 10px 55px;  /*margin was added*/
 }
 
 .contact-link a {
@@ -32,12 +41,14 @@
   color: #e13d3d;
 }
 
+
 .social-section {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
   color: #fff;
+
 }
 
 .social-section h3 {
@@ -124,16 +135,23 @@
     display: none;
   }
 
+  .link-section {
+    margin: 0;
+  }  
+ 
+  
   .category-link {
     font-size: 12px;
+    margin: 10px 15px;
   }
 
   .contact-link {
     font-size: 12px;
+    margin: 10px 15px;
   }
 
   .social-section {
-    margin-top: 25px;
+    margin: 15px 0;
   }
 
   .social-section h3 {

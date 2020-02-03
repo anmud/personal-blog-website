@@ -196,24 +196,49 @@
 
 /* Small Screens */
 @media (min-width: 320px) and (max-width: 600px) {
+
+  .about-image-container {
+    height: 245px;
+  }
+  
+  .about-image-container img {
+    object-fit: fill;
+  }
+
+
+.about-link {
+  margin: 15px 0 0 0;
+}
+
+
+  .popular-post{
+    margin: 0;
+  }
+
   .popular-post h3 {
-    font-size: 17px;
+    font-size: 16px;
   }
 
   .popular-post h2 {
     letter-spacing: 1px;
-    font-size: 16px;
+    font-size: 15px;
+  }
+
+  .posts {
+    margin: 5px 18px 5px 10px;
   }
 
   .numbers p {
-    font-size: 37px;
-    margin-bottom: 13px;
+    font-size: 35px;
+    margin-bottom: 5px;
   }
+
 
   .named-posts p {
     line-height: 1.2;
-    font-size: 15px;
+    font-size: 16px;
   }
+
 
   .load-more-button a {
     font-size: 16px;
@@ -222,6 +247,11 @@
   .social h3 {
     font-size: 16px;
   }
+
+
+.social-icons {
+  margin-left: 10px;
+}
 
   .v-line {
     height: 21px;

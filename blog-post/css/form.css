@@ -6,31 +6,33 @@
   font-size: 13px;
   letter-spacing: 1px;
   font-weight: bold;
-  margin: 25px 30px 0 30px;
+  margin: 10px 25px;
 }
 
 input[type="text"] {
-  width: 100%;
+  width: 141%;
   padding: 12px 20px;
-  margin: 3px 0;
-  display: inline-block;
+  margin: 0;
   box-sizing: border-box;
   background-color: #fbf8f4;
   border: 0 solid;
+  resize: vertical;
 }
+
 
 input[type="text"]:focus {
   border: 3px solid #555;
 }
 
 textarea {
-  width: 100%;
+  width: 141%;
   height: 250px;
   padding: 12px 20px;
   box-sizing: border-box;
   border: 0 solid;
   background-color: #fbf8f4;
-  resize: none;
+  resize: vertical;
+  margin: 0;
 }
 
 .form-label {
@@ -59,7 +61,7 @@ input[type="submit"] {
   font-size: 15px;
   font-style: italic;
   text-align: center;
-  margin: 15px 0 45px 570px;
+  margin: 15px 0 15px 177px; 
 }
 
 input[type="submit"]:hover {
