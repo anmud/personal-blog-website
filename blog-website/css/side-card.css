@@ -73,7 +73,7 @@
 .numbers p {
   font-size: 40px;
   color: #d8d8d8;
-  margin-bottom: 35px;
+  margin-bottom: 15px;
 }
 
 .named-posts {
@@ -84,7 +84,7 @@
 }
 
 .named-posts p {
-  margin-bottom: 15px;
+  margin-bottom: 32px;
   line-height: 1.6;
 }
 

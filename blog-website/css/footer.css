@@ -181,23 +181,27 @@
 
 /* Medium Screens */
 @media (min-width: 768px) and (max-width: 992px) {
+  .v-line-2 {
+    border-left: 1px solid #fff;
+    height: 95px;
+  }
+
   .category-link {
-    font-size: 11px;
-    margin: 0;
+    font-size: 13px;
+    margin: 10px 15px;
   }
 
   .contact-link {
-    font-size: 11px;
-    margin: 0;
+    font-size: 13px;
+    margin: 10px 15px;
   }
 
   .social-section {
-    margin-top: 2px;
-    margin: 0;
+    margin: 10px 0;
   }
 
   .social-section h3 {
-    font-size: 11px;
+    font-size: 14px;
   }
 
   .social-icons-ft {

@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0 18px 0 1px;
 }
 
 .comment-button-container {
@@ -12,7 +13,7 @@
 }
 
 .personal-comment-sign {
-  margin: 35px 0 15px 27px; 
+  margin: 35px 0 15px 17px; 
   letter-spacing: 1px;
 }
 
@@ -23,7 +24,7 @@
 }
 
 .comment-button {
-  margin: 25px 0 15px 255px; 
+  margin: 25px 0 15px 275px; 
   border: 1px solid #e13d3d;
   background-color: #fff;
 }
@@ -88,20 +89,26 @@
 /*Small screens*/
 @media (min-width: 320px) and (max-width: 600px) {
 
+  .post-personal-comments-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
   .comment-button-container {
     flex-direction: column;
-    justify-content: flex-start;
-    width: 100vw;
-    position: relative;
+    align-self: center;
   }
 
   .personal-comment-sign {
-    margin: 0;
+    margin: 10px 0;
     font-size: 14px;
   }
 
   .comment-button {
-    margin: 5px 15px;
+    margin: auto;
   }
 
   .comment-button a {
@@ -110,13 +117,8 @@
     font-size: 13px;
   }
 
-  post-personal-comments-container {
-    width: 100vw;
-    position: relative;
-  }
-
   .horisontal-line {
-    margin: 0 10px;
+    margin: 0 29px 0 10px;
   }
 
   .personal-comment {
@@ -126,57 +128,59 @@
   }
 
   .comment-text {
-    margin: 0;
+    margin: 0 auto;
   }
 
   .comment-author {
-    font-size: 13px;
+    font-size: 12px;
     padding: 0 3px;
   }
 
   .comment-body {
-    padding: 0 3px;
+    padding-right: 25px;
     font-size: 13px;
     margin: 0;
   }
 
+
   .personal-comment-date {
     margin: 0 0 0 10px;
-    font-size: 12px;
+    font-size: 11px;
   }
 }
 
 /* Medium Screens */
-@media (min-width: 768px) and (max-width: 800px) {
+@media (min-width: 768px) and (max-width: 992px) {
+  .post-personal-comments-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
   .comment-button-container {
-    width: 100vw;
-    position: relative;
+    flex-direction: column;
+    align-self: center;
   }
 
   .personal-comment-sign {
-    margin-left: 10px;
-    font-size: 14px;
+    margin: 10px 0;
+    font-size: 20px;
   }
 
   .comment-button {
-    margin: 5px 25px;
+    margin: auto;
   }
 
   .comment-button a {
     padding: 15px 30px;
     display: block;
-    font-size: 13px;
-  }
-
-  post-personal-comments-container {
-    width: 100vw;
-    position: relative;
+    font-size: 20px;
   }
 
   .horisontal-line {
-    margin: 0;
-    width: 100vw;
-    position: relative;
+    margin: 0 29px 0 10px;
   }
 
   .personal-comment {
@@ -186,22 +190,23 @@
   }
 
   .comment-text {
-    margin: 0;
+    margin: 0 auto;
   }
 
   .comment-author {
-    font-size: 13px;
+    font-size: 14px;
     padding: 0 3px;
   }
 
   .comment-body {
-    padding: 0 25px 0 5px;
-    font-size: 14px;
+    padding-right: 25px;
+    font-size: 17px;
     margin: 0;
   }
 
+
   .personal-comment-date {
     margin: 0 0 0 10px;
-    font-size: 12px;
+    font-size: 16px;
   }
 }

@@ -12,7 +12,7 @@
   width: 95%;
 }
 
-li a {
+.nav-items li a {
   display: block;
   color: #666;
   font-weight: bold;
@@ -23,7 +23,7 @@ li a {
   text-decoration: none;
 }
 
-li a:hover {
+.nav-items li a:hover {
   color: #e13d3d;
 }
 

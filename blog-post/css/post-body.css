@@ -11,9 +11,8 @@
   cursor: pointer;
 }
 
-
 .card-container h2 {
-  font-size: 2.5em;
+  font-size: 3em;
   font-weight: lighter;
   letter-spacing: 2px;
   margin: 12px 0;
@@ -25,10 +24,10 @@
 }
 
 .card-container h5 {
+  font-size: 1em;
   margin: 2px 0 5px 0;
   letter-spacing: 1px;
 }
-
 
 .post-image-container {
   overflow: hidden;
@@ -43,10 +42,9 @@
   object-fit: fill;
 }
 
-
-/* .post-text {
-  max-width: 100%;
-}  */
+.post-text {
+  font-size: 1.2em;
+}  
 
 .post-comments-line {
   /* grid-area: post-comments-line; */
@@ -151,13 +149,12 @@
     padding: 0;
   }
 
-  .post-name {
-    font-size: 20px;
-    font-weight: 500;
+  .card-container h2 {
+    font-size: 2em;
+    font-weight: 400;
     letter-spacing: 0.08em;
-    margin: 0;
-    padding-left: 5px;
     line-height: normal;
+    margin: 12px 0;
   }
 
   .post-text-container h5 {
@@ -166,7 +163,7 @@
   }
 
   .post-text {
-    font-size: 13px;
+    font-size: 1em;
     width: 100vw;
     position: relative;
     padding: 0 5px;
@@ -211,6 +208,9 @@
   }
 
   .post-comments-container {
+    display: none;
+  }
+  /* .post-comments-container {
     margin: 0;
     padding-right: 15px;
     padding-left: 10px;
@@ -220,11 +220,11 @@
     padding-right: 10px;
     font-size: 12px;
     letter-spacing: 1px;
-  }
+  } */
 }
 
 /* Medium Screens */
-@media (min-width: 768px) and (max-width: 800px) {
+@media (min-width: 768px) and (max-width: 992px) {
   .category {
     font-size: 13px;
     padding: 0;
@@ -251,7 +251,7 @@
   }
 
   .post-text {
-    font-size: 14px;
+    font-size: 16px;
     padding: 0 25px 0 5px;
   }
 

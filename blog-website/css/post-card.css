@@ -241,6 +241,7 @@
 @media (min-width: 768px) and (max-width: 992px) {
   .label {
     font-size: 12px;
+    margin: 5px 0;
   }
 
   .post-card h2 {
@@ -258,13 +259,21 @@
     padding-right: 15px;
   }
 
+
+.image-container {
+margin: 0;
+height: 100%;
+width: 100vw;
+}
+
   .read-more-button {
     font-size: 14px;
   }
 
   .comments-line {
     font-size: 14px;
-    width: 98%;
+    width: 100%;
+    position: relative;
   }
 
   .date {
@@ -283,22 +292,26 @@
     padding: 0 4px;
   }
 
+  
+  .comments {
+    padding-right: 10px;
+    letter-spacing: 2px;
+  }
+  
   .comments-container {
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin: 0 18px 0 0;
   }
 
-  .comments {
-    padding-right: 10px;
-  }
 
   .comments-number {
     font-size: 20px;
   }
 
   .load-content-button {
-    margin: auto;
+    margin: 10px auto;
   }
 
   .load-content-button a {

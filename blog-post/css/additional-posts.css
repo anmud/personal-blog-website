@@ -14,12 +14,13 @@
   background-color: #fff;
   margin-right: 10px;
   flex: 1;
+  flex-grow: 0;
 }
 
 .add-image-container {
   overflow: hidden;
-  height: 143px;
-  width: 192px;
+  height: 173px;
+  width: 210px;
   margin-top: 0;
 }
 
@@ -116,8 +117,41 @@
 }
 
 /* Medium Screens */
-@media (min-width: 768px) and (max-width: 800px) {
+@media (min-width: 768px) and (max-width: 992px) {
+  .additional-posts {
+    margin: auto;
+  }
+
+  .additional-posts h2 {
+    font-size: 32px;
+    margin-top: 10px;
+  }
+
   .additional-cards {
-    margin: 0 0 7px 7px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .post-info {
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    flex-grow: 0;
+  }
+
+
+  .add-image-container {
+    overflow: hidden;
+    height: 213px;
+    width: 317px;
+    margin-top: 0;
+    position: relative
+  }
+
+
+  .add-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 5px;
   }
 }

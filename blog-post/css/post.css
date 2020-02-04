@@ -49,6 +49,7 @@ body {
 
 
 /* Navbar*/
+
 #dws-menu,
 label {
   display: none;
@@ -56,14 +57,23 @@ label {
 
 .menu {
   grid-area: nav;
-  margin: 0 0.5px;
+  margin: 10px 10px;
   z-index: 100;
+}
+
+.indents {
+  margin: 15px 10px;
+}
+
+.nav-items {
+  margin: 0 25px;
 }
 
 .leb-menu {
   border-bottom: 1px solid #e13d3d;
   display: none;
 }
+
 
 /* Main Content */
 main {
@@ -78,7 +88,7 @@ main {
 
 /* TODO:  Add a card for posts */
 .card-container {
- margin: 10px 0 35px 5px;
+  margin: 10px 0 35px 5px;
   padding: 0 10px;
   display: flex;
   flex-direction: column;
@@ -110,10 +120,17 @@ form {
   align-items: flex-start;
   height: fit-content;
   background-color: #fff;
-  margin: 0;
-  padding: 0;
+  margin: 10px auto;
+  padding: 1em 3em 1em 2em;
+  width: 100%;
+  position: relative;
+}
+
+
+form p {
   width: 100%;
 }
+
 
 /* Right column */
 aside {
@@ -202,6 +219,24 @@ aside {
     transition: all 0.5s;
   }
 
+
+  /* Main Content */
+ main {
+  grid-area: post;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  height: fit-content;
+  overflow: hidden; 
+}
+
+ 
+.card-container {
+    margin: 0;
+    padding: 0;
+ }
+ 
+ 
   .post-content {
     margin: 0;
     padding: 0;
@@ -209,45 +244,55 @@ aside {
 
   .post-body {
     margin: 0;
+    padding: 0;
   }
 
   .additional-posts {
     margin: 0;
-    width: 100vw;
-    position: relative;
+    padding: 0;
   }
 
   .comments-card {
     margin: 0;
-    width: 100vw;
-    position: relative;
-  }
-
-  .comments-card-container {
-    margin: 0;
-    width: 100vw;
-    position: relative;
-  }
-
-
-  .card-container {
-    margin: 0;
     padding: 0;
   }
 
-  aside {
-    margin: 0 auto;
-    width: 65%;
-    grid-gap: 10px;
-  }
-  
 
-  /* TODO:  Add a card for additional info */
-  .side-card {
+  .comments-card-container {
     margin: 0;
-    background-color: #fff;
-    height: fit-content;
   }
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: fit-content;
+  width: 100%;
+  background-color: #fff;
+  margin: 10px auto;
+  padding: 1em 3em 1em 2em;
+  position: relative;
+}
+
+form p {
+  width: 100%;
+}
+
+ 
+aside {
+  margin: 0 auto;
+  width: 78%;
+  grid-gap: 10px;
+}
+
+
+/* TODO:  Add a card for additional info */
+.side-card {
+  margin: 0;
+  background-color: #fff;
+  height: fit-content;
+}
 
   .footer {
     flex-direction: column;
@@ -259,9 +304,10 @@ aside {
 
 
 /* Medium Screens */
-@media (min-width: 768px) and (max-width: 800px) {
+@media (min-width: 768px) and (max-width: 992px) {
   .post-container {
-    width: 100%;
+    margin: auto;
+    display: grid;
     grid-gap: 0;
     height: fit-content;
     grid-template-columns: 1fr;
@@ -278,9 +324,6 @@ aside {
 
   .header {
     margin: 0;
-    text-align: center;
-    width: 100vw;
-    position: relative;
   }
 
   label {
@@ -299,8 +342,8 @@ aside {
     display: block;
     width: 100vw;
     position: relative;
-    margin: 0;
   }
+
 
   #dws-menu:checked ~ .menu {
     margin: 0;
@@ -313,53 +356,80 @@ aside {
     transition: all 0.5s;
   }
 
+
+ main {
+  grid-area: post;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  height: fit-content;
+  overflow: hidden; 
+}
+
+ 
+.card-container {
+    margin: 0;
+    padding: 0;
+ }
+ 
   .post-content {
-    margin: 0 25px 0 0;
-    width: 100vw;
-    position: relative;
+    margin: 0;
+    padding: 0;
   }
 
   .post-body {
-    width: 100vw;
-    position: relative;
+    margin: 0;
+    padding: 0;
   }
 
   .additional-posts {
     margin: 0;
-    width: 100vw;
-    position: relative;
+    padding: 0;
   }
 
   .comments-card {
-    margin-top: 10px;
-    width: 100vw;
-    position: relative;
+    margin: 0;
+    padding: 0;
   }
+
 
   .comments-card-container {
     margin: 0;
-    width: 100vw;
-    position: relative;
   }
 
-  .comment-form {
-    margin: 0;
-    width: 100vw;
-    position: relative;
-  }
 
-  .side {
-    margin: 0 199px;
-    grid-gap: 25px;
-  }
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: fit-content;
+  width: 100%;
+  background-color: #fff;
+  margin: 10px auto;
+  padding: 1em 3em 1em 2em;
+  position: relative;
+}
 
-  .side-card {
-    margin: 15px;
-  }
+form p {
+  width: 100%;
+}
 
-  .footer {
-    padding: 25px;
-    width: 100vw;
-    position: relative;
-  }
+ 
+aside {
+  margin: 0 auto;
+  width: 45%;
+  grid-gap: 10px;
+}
+
+.side-card {
+  margin: 0;
+  background-color: #fff;
+  height: fit-content;
+}
+
+.footer {
+  width: 100vw;
+  position: relative;
+  padding: 0;
+}
 }

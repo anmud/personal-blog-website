@@ -70,6 +70,7 @@ main {
   flex-direction: column;
   margin: 0;
   height: fit-content;
+  overflow: hidden; 
 }
 
 
@@ -187,7 +188,7 @@ main {
 
   aside {
     margin: 0 auto;
-    width: 65%;
+    width: 78%;
     grid-gap: 10px;
   }
   
@@ -211,10 +212,11 @@ main {
 @media (min-width: 768px) and (max-width: 992px) {
   .container {
     display: grid;
-    margin: 0;
+    margin: auto;
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto 1fr 1fr auto;
-    grid-gap: 10px;
+    grid-template-rows: auto auto 1fr auto auto;
+    grid-gap: 5px;
+    height: fit-content;
     grid-template-areas:
       "header"
       "nav"
@@ -222,6 +224,7 @@ main {
       "side"
       "footer";
   }
+
 
   .header {
     margin: auto;
@@ -259,26 +262,35 @@ main {
     margin: 0;
   }
 
-  .content {
-    margin: 0 22px 0 7px;
-  }
+   
+main {
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  height: fit-content;
+}
 
   .post-card {
-    margin: 0 5px;
-    padding: 0 12px 0 15px;
+    margin: 0;
+    padding: 0;
   }
 
-  .side {
-    margin: 23px 216px 0 216px;
-    grid-gap: 25px;
+  aside {
+    margin: 0 auto;
+    width: 45%;
+    grid-gap: 10px;
   }
-
+  
   .side-card {
-    margin: 3px;
+    margin: 0;
+    background-color: #fff;
+    height: fit-content;
   }
 
   .footer {
     width: 100vw;
     position: relative;
+    padding: 0;
   }
 }
