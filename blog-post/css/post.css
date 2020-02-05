@@ -85,20 +85,24 @@ main {
   grid-area: post;
   display: flex;
   flex-direction: column;
-  margin: 0;
+  margin-left: 8px;
   height: fit-content;
   overflow: hidden; 
+  max-width: 100%;
+width: 650px;
 }
 
 
 /* TODO:  Add a card for posts */
 .card-container {
-  margin: 10px 0 35px 5px;
-  padding: 0 10px;
+  margin: 10px 0;
+  padding: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+  overflow: hidden;
+  position: relative;
 }
 
 .additional-posts {
@@ -141,17 +145,20 @@ form p {
 aside {
   grid-area: side;
   display: grid;
-  grid-gap: 15px;
   grid-template-columns: 1fr;
   grid-template-rows: minmax(100px, auto);
   height: fit-content;
   position: relative; 
+  max-width: 100%;
+  width: 290px;
+  margin: 0 0 0 -45px;
 }
-
 
 /* Add a card for additional info */
 .side-card {
-  margin: 34px;
+  max-width: 100%;
+  width: 230px;
+  margin: 15px auto;
   background-color: #fff;
   height: fit-content;
 }
@@ -349,7 +356,7 @@ aside {
     border-bottom: 1px solid #e13d3d;
     display: block;
     max-width: 100%;
-    width: 700px;
+    width: 670px;
     position: relative;
     margin: 0 auto;
   }

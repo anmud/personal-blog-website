@@ -25,7 +25,6 @@ body {
   /* grid-template-columns: repeat(3, 4fr); */
   grid-template-columns: repeat(auto-fit, minmax(730px, 1fr));
   grid-template-rows: auto auto 1fr auto;
-  grid-gap: 10px;
   grid-template-areas:
     "header header header"
     "nav nav nav"
@@ -60,6 +59,8 @@ label {
   grid-area: nav;
   margin: 0 0.5px;
   z-index: 100;
+  max-width: 100%;
+  width: 970px
 }
 
 .leb-menu {
@@ -74,42 +75,44 @@ main {
   grid-area: main;
   display: flex;
   flex-direction: column;
-  margin: 0;
+  margin-left: 8px;
   height: fit-content;
   overflow: hidden; 
+  max-width: 100%;
+  width: 650px;
+  border: 1px solid red;
 }
 
 
 /* TODO:  Add a card for articles */
 .post-card {
-  margin: 10px 0 35px 5px;
-  padding: 0 10px;
+  margin: 10px 0;
+  padding: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
   overflow: hidden;
-  max-width: 100%;
-  width: 750px;
   position: relative;
 }
 
 aside {
   grid-area: side;
   display: grid;
-  grid-gap: 15px;
   grid-template-columns: 1fr; 
   grid-template-rows: minmax(100px, auto);
   height: fit-content;
   max-width: 100%;
-  width: 100%;
+  width: 290px;
+  margin: 0 0 0 -45px;
+  border: 1px solid green;
 }
 
 /* TODO:  Add a card for additional info */
 .side-card {
   max-width: 100%;
-  width: 270px;
-  margin: 34px;
+  width: 230px;
+  margin: 15px auto;
   background-color: #fff;
   height: fit-content;
 }
@@ -277,7 +280,7 @@ main {
     border-bottom: 1px solid #e13d3d;
     display: block;
     max-width: 100%;
-    width: 700px;
+    width: 650px;
     position: relative;
     margin: 0 auto;
   }
