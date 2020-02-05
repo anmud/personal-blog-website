@@ -29,7 +29,9 @@
   letter-spacing: 1px;
 }
 
+
 .post-image-container {
+  position: relative;
   overflow: hidden;
   height: 450px;
   width: 100%;
@@ -37,9 +39,12 @@
 }
 
 .post-image-container img {
-  width: 100%;
-  height: 100%;
-  object-fit: fill;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  object-fit: cover; 
+  position: absolute;
+  margin: auto;
 }
 
 .post-text {
@@ -230,10 +235,29 @@
     padding: 0;
   }
 
+  #big-image {
+    overflow: hidden;
+    position: relative;
+    height: 372px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  #big-image img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: cover; 
+    position: absolute;
+    margin: 0 auto;
+    display: block;
+  }
+
   .post-text-container {
     line-height: 1em;
-    margin: 0;
-    padding: 0;
+    margin: 0 auto;
+    padding: 0 auto;
   }
 
   .post-name {
@@ -252,12 +276,13 @@
 
   .post-text {
     font-size: 16px;
-    padding: 0 25px 0 5px;
+    padding: 0 10px 0 2px;
   }
 
   .post-comments-line {
-    margin: 0;
-    width: 100vw;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 650px;
     position: relative;
   }
 
@@ -282,8 +307,9 @@
   }
 
   .post-comments-container {
-    margin: 0;
-    padding-left: 95px;
+    margin: 0 auto;
+    padding: 0 0 0 115px;
+    /* padding-left: 95px; */
   }
 
   .post-comments {

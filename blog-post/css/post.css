@@ -17,6 +17,7 @@ body {
   background: #fbf8f4;
   color: #666;
   /* overflow-x: hidden; */
+  display: block;
 }
 
 .post-container {
@@ -24,8 +25,9 @@ body {
   grid-gap: 10px;
   width: 100%;
   height: 100%;
-  margin: auto;
-  grid-template-columns: repeat(3, 4fr);
+  /* margin: auto; */
+  /* grid-template-columns: repeat(3, 4fr); */
+  grid-template-columns: repeat(auto-fit, minmax(730px, 1fr));
   grid-template-rows: auto auto 1fr auto;
   grid-template-areas:
     "header header header"
@@ -33,6 +35,9 @@ body {
     "post   post   side"
     "footer footer footer";
     overflow: hidden;
+    max-width: 1080px;
+    padding: 0 15px;
+    margin: 0 auto;
 }
 
 .box {
@@ -306,11 +311,11 @@ aside {
 /* Medium Screens */
 @media (min-width: 768px) and (max-width: 992px) {
   .post-container {
-    margin: auto;
     display: grid;
     grid-gap: 0;
     height: fit-content;
-    grid-template-columns: 1fr;
+    /* grid-template-columns: 1fr; */
+    grid-template-columns: repeat(auto-fit, minmax(530px, 1fr));
     grid-template-rows: auto auto 1fr auto auto;
     grid-template-areas:
       "header"
@@ -320,10 +325,13 @@ aside {
       "footer";
     overflow: hidden;
     box-sizing: border-box;
+    max-width: 992px;
+    padding: 0 auto;
+    margin: 0 auto;
   }
 
   .header {
-    margin: 0;
+    margin: auto;
   }
 
   label {
@@ -340,8 +348,10 @@ aside {
   .leb-menu {
     border-bottom: 1px solid #e13d3d;
     display: block;
-    width: 100vw;
+    max-width: 100%;
+    width: 700px;
     position: relative;
+    margin: 0 auto;
   }
 
 
@@ -361,40 +371,42 @@ aside {
   grid-area: post;
   display: flex;
   flex-direction: column;
-  margin: 0;
+  margin: 0 auto;
   height: fit-content;
   overflow: hidden; 
 }
 
  
 .card-container {
-    margin: 0;
-    padding: 0;
+    margin: 0 auto;
+    padding: 0 auto;
+    width: 680px;
+    height: fit-content;
  }
  
   .post-content {
-    margin: 0;
-    padding: 0;
+    margin: 0 auto;
+    padding: 0 auto;
   }
 
   .post-body {
-    margin: 0;
-    padding: 0;
+    margin: 0 auto;
+    padding: 0 auto;
   }
 
   .additional-posts {
-    margin: 0;
-    padding: 0;
+    margin: 0 auto;
+    padding: 0 auto;
   }
 
   .comments-card {
-    margin: 0;
-    padding: 0;
+    margin: 0 auto;
+    padding: 0 auto;
   }
 
 
   .comments-card-container {
-    margin: 0;
+    margin: 0 auto;
   }
 
 
@@ -416,15 +428,19 @@ form p {
 
  
 aside {
-  margin: 0 auto;
-  width: 45%;
+  margin:  0 auto;
+  max-width: 80%;
+  width: 65%;
+  /* width: 45%; */
   grid-gap: 10px;
 }
 
 .side-card {
-  margin: 0;
-  background-color: #fff;
-  height: fit-content;
+  max-width: 100%;
+    width: 45%;
+    margin: 0 auto;
+    background-color: #fff;
+    height: fit-content;
 }
 
 .footer {
