@@ -193,8 +193,9 @@
       margin: 5px 0;
   }
 
+
   .post-card h2 {
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 500;
     letter-spacing: 0.08em;
   }
@@ -203,15 +204,67 @@
     font-size: 13px;
   }
 
-  .image-container {
+  #small-screen-image-1 {
+    overflow: hidden;
+    position: relative;
+    height: 10.2em;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  
+  #small-screen-image-1 img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    object-fit: cover; 
+    position: absolute;
     margin: 0;
-    height: 100%;
-    width: 100vw;
+    display: block;
+  }
+
+  #small-screen-image-2 {
+    overflow: hidden;
+    position: relative;
+    height: 11.8em;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  
+  #small-screen-image-2 img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    object-fit: cover; 
+    position: absolute;
+    margin: 0;
+    display: block;
+  }
+
+  #big-image {
+    overflow: hidden;
+    position: relative;
+    height: 167px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  #big-image img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    object-fit: cover; 
+    position: absolute;
+    margin: 0;
+    display: block;
   }
 
   .post-short {
     font-size: 14px;
-    padding-right: 2.5em;
+    padding-right: 20px;
+    max-width: 100%;
+    width: 310px;
   } 
 
   .read-more-button {
@@ -219,19 +272,14 @@
   }
 
   .comments-line {
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
     position: relative;
     font-size: 11px;
-    margin: 0;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 100%;
+    width: 320px;
   }
 
-
-  .social-container {
-    flex-wrap: wrap;
-    margin: 0;
-  }
 
   .date {
     padding: 0 2px;
@@ -286,13 +334,13 @@
 
   .post-short {
     font-size: 16px;
-    padding-right: 20px;
+    padding-right: 15px;
   }
 
   .image-container {
     overflow: hidden;
     position: relative;
-    height: 440px;
+    height: 431px;
     width: 100%;
     margin: 0 auto;
   }
@@ -311,7 +359,7 @@
   #big-image {
     overflow: hidden;
     position: relative;
-    height: 372px;
+    height: 363px;
     width: 100%;
     margin: 0 auto;
   }
@@ -326,12 +374,6 @@
     margin: 0 auto;
     display: block;
   }
-/* 
-.image-container {
-margin: 0;
-height: 100%;
-width: 100vw;
-} */
 
   .read-more-button {
     font-size: 14px;
@@ -340,8 +382,9 @@ width: 100vw;
   .comments-line {
     font-size: 14px;
     max-width: 100%;
-    width: 100px
+    width: 640px;
     position: relative;
+    margin: 0 ;
   }
 
   .date {

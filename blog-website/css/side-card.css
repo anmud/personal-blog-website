@@ -7,18 +7,19 @@
 .about-image-container {
   overflow: hidden;
   position: relative;
-  height: 255px;
+  height: 203px;
   width: 100%;
-  margin-top: 0;
+  margin: 0 auto;
 }
 
 .about-image-container img {
   max-width: 100%;
   max-height: 100%;
   width: auto;
+  height: auto;
   object-fit: cover;
   position: absolute;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .about-link {
@@ -138,12 +139,12 @@
 }
 
 .facebook-button {
-  margin: 30px 20px;
+  margin: 30px 15px;
 }
 
 .facebook-button a {
   color: #666;
-  font-size: 25px;
+  font-size: 23px;
 }
 
 .facebook-button a:hover {
@@ -151,12 +152,12 @@
 }
 
 .twitter-button {
-  margin: 30px 20px;
+  margin: 30px 15px;
 }
 
 .twitter-button a {
   color: #666;
-  font-size: 25px;
+  font-size: 23px;
 }
 
 .twitter-button a:hover {
@@ -164,12 +165,12 @@
 }
 
 .pinterest-button {
-  margin: 30px 20px;
+  margin: 30px 15px;
 }
 
 .pinterest-button a {
   color: #666;
-  font-size: 25px;
+  font-size: 23px;
 }
 
 .pinterest-button a:hover {
@@ -177,12 +178,12 @@
 }
 
 .instagram-button {
-  margin: 30px 20px;
+  margin: 30px 15px;
 }
 
 .instagram-button a {
   color: #666;
-  font-size: 25px;
+  font-size: 23px;
 }
 
 .instagram-button a:hover {
@@ -200,22 +201,27 @@
 
 /* Small Screens */
 @media (min-width: 320px) and (max-width: 600px) {
-
   .about-image-container {
-    height: 245px;
+    overflow: hidden;
+    position: relative;
+    height: 274px;
+    width: 100%;
   }
-  
+
   .about-image-container img {
-    object-fit: fill;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    object-fit: cover;
+    position: absolute;
+    margin: 0 auto;
   }
 
+  .about-link {
+    margin: 10px auto;
+  }
 
-.about-link {
-  margin: 15px 0 0 0;
-}
-
-
-  .popular-post{
+  .popular-post {
     margin: 0;
   }
 
@@ -229,20 +235,31 @@
   }
 
   .posts {
-    margin: 5px 18px 5px 10px;
+    margin: 0;
+    padding: 0 5px;
+  }
+
+  .numbers {
+    margin: auto 0;
+    padding: 0;
   }
 
   .numbers p {
-    font-size: 35px;
-    margin-bottom: 5px;
+    font-size: 37px;
+    margin: 12px 0;
+    padding: 10px 0;
   }
 
+  .named-posts {
+    margin: 0 19px 0 0;
+    padding: 0;
+  }
 
   .named-posts p {
     line-height: 1.2;
-    font-size: 16px;
+    font-size: 15px;
+    padding: 0 10px;
   }
-
 
   .load-more-button a {
     font-size: 16px;
@@ -252,29 +269,28 @@
     font-size: 16px;
   }
 
-
-.social-icons {
-  margin-left: 10px;
-}
+  .social-icons {
+    margin-left: 10px;
+  }
 
   .v-line {
     height: 21px;
   }
 
   .facebook-button a {
-    font-size: 17px;
+    font-size: 16px;
   }
 
   .twitter-button a {
-    font-size: 17px;
+    font-size: 16px;
   }
 
   .pinterest-button a {
-    font-size: 17px;
+    font-size: 16px;
   }
 
   .instagram-button a {
-    font-size: 17px;
+    font-size: 16px;
   }
 
   .contact-me-button {
@@ -284,6 +300,32 @@
 
 /* Medium Screens */
 @media (min-width: 768px) and (max-width: 992px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-link {
+    margin: 10px auto;
+  }
+
+  .about-image-container {
+    overflow: hidden;
+    position: relative;
+    height: 308px;
+    width: 100%;
+  }
+
+  .about-image-container img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    object-fit: cover;
+    position: absolute;
+    margin: 0 auto;
+  }
+
   .popular-post h3 {
     font-size: 17px;
   }

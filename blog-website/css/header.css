@@ -14,11 +14,13 @@
 /* Small Screens */
 @media (min-width: 320px) and (max-width: 600px) {
   .naming {
-    font: 2.5em "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    font: 35px "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
       "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-    padding-top: 35px;
+    padding: 0 auto;
+    margin: 0 auto;
     font-weight: normal;
-    word-spacing: 2px;
+    word-spacing: 1px;
+    letter-spacing: 3px;
   }
 }
 
@@ -27,7 +29,7 @@
   .naming {
     font: 53px "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
       "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-    padding-top: 35px;
+    padding: 35px auto;
     font-weight: normal;
     word-spacing: 2px;
   }

@@ -118,7 +118,9 @@
   }
 
   .horisontal-line {
-    margin: 0 29px 0 10px;
+    margin: 0;
+    max-width: 100%;
+    width: 299px
   }
 
   .personal-comment {
@@ -129,17 +131,21 @@
 
   .comment-text {
     margin: 0 auto;
+    padding: 0;
   }
 
   .comment-author {
     font-size: 12px;
-    padding: 0 3px;
+    padding: 0 10px;
   }
 
   .comment-body {
     padding-right: 25px;
     font-size: 13px;
     margin: 0;
+    padding: 0 10px;
+    max-width: 100%;
+    width: 310px;
   }
 
 

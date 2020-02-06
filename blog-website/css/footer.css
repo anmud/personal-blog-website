@@ -139,44 +139,22 @@
     margin: 0;
   }  
  
-  
   .category-link {
     font-size: 12px;
-    margin: 10px 15px;
+    margin: 10px 5px;
   }
 
   .contact-link {
     font-size: 12px;
-    margin: 10px 15px;
+    margin: 10px 5px;
   }
 
   .social-section {
     margin: 15px 0;
+    display: none;
   }
 
-  .social-section h3 {
-    font-size: 12px;
-  }
-
-  .facebook-button-ft a {
-    font-size: 17px;
-  }
-
-  .twitter-button-ft a {
-    font-size: 17px;
-  }
-
-  .pinterest-button-ft a {
-    font-size: 17px;
-  }
-
-  .instagram-button-ft a {
-    font-size: 17px;
-  }
-
-  .v-line-ft {
-    height: 21px;
-  }
+  /* 320 */
 }
 
 /* Medium Screens */

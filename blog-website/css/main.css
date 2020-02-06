@@ -60,7 +60,7 @@ label {
   margin: 0 0.5px;
   z-index: 100;
   max-width: 100%;
-  width: 970px
+  width: 100%
 }
 
 .leb-menu {
@@ -80,7 +80,6 @@ main {
   overflow: hidden; 
   max-width: 100%;
   width: 650px;
-  border: 1px solid red;
 }
 
 
@@ -104,8 +103,7 @@ aside {
   height: fit-content;
   max-width: 100%;
   width: 290px;
-  margin: 0 0 0 -45px;
-  border: 1px solid green;
+  margin: 0 0 0 -55px;
 }
 
 /* TODO:  Add a card for additional info */
@@ -135,11 +133,10 @@ aside {
 @media (min-width: 320px) and (max-width: 600px) {
   .container {
     display: grid;
-    margin: auto;
-    grid-gap: 0;
-    height: fit-content;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; 
+    /* grid-template-columns: repeat(auto-fit, minmax(530px, 1fr)); */
     grid-template-rows: auto auto 1fr auto auto;
+    height: fit-content;
     grid-template-areas:
       "header"
       "nav"
@@ -147,110 +144,16 @@ aside {
       "side"
       "footer";
       max-width: 600px;
-      padding: 0 15px;
-      margin: 0 auto;
+      padding: 0;
+      margin: 0;
   }
 
   .header {
-    margin: 0;
-    text-align: center;
-    width: 100vw;
-    position: relative;
-  }
-
-  label {
-    display: block;
-    width: 30px;
-    height: 30px;
-    padding: 10px;
-    border-right: 1px solid #fff;
-  }
-
-  label:hover {
-    cursor: pointer;
-  }
-
-  #dws-menu:checked ~ .menu {
-    margin: 0;
-  }
-
-  .menu {
-    position: absolute;
-    width: 200px;
-    margin-left: -200px;
-    transition: all 0.5s;
-  }
-
-  .leb-menu {
-    border-bottom: 1px solid #e13d3d;
-    display: block;
-    width: 100vw;
-    position: relative;
-    margin: 0;
-  }
-
-  /*Main Content*/
-
-main {
-  grid-area: main;
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  height: fit-content;
-}
-
-
-  .post-card {
-    margin: 0;
-    padding: 0;
-  }
-
-  aside {
     margin: 0 auto;
-    width: 78%;
-    grid-gap: 10px;
-  }
-  
-
-  /* TODO:  Add a card for additional info */
-  .side-card {
-    margin: 0;
-    background-color: #fff;
-    height: fit-content;
-  }
-
-  .footer {
-    flex-direction: column;
-    width: 100vw;
-    position: relative;
     padding: 0;
-  }
-}
-
-/* Medium Screens */
-@media (min-width: 768px) and (max-width: 992px) {
-  .container {
-    display: grid;
-    /* grid-template-columns: 1fr; */
-    grid-template-columns: repeat(auto-fit, minmax(530px, 1fr));
-    grid-template-rows: auto auto 1fr auto auto;
-    grid-gap: 5px;
-    height: fit-content;
-    grid-template-areas:
-      "header"
-      "nav"
-      "main"
-      "side"
-      "footer";
-      max-width: 992px;
-      padding: 0 auto;
-      margin: 0 auto;
-  }
-
-
-  .header {
-    margin: auto;
     text-align: center;
+    max-width: 100%;
+    width: 297px;
   }
 
   label {
@@ -266,12 +169,13 @@ main {
   }
 
   #dws-menu:checked ~ .menu {
-    margin: 0;
+    margin: 32px auto;
   }
 
   .menu {
     position: absolute;
     width: 200px;
+    height: 150px;
     margin-left: -200px;
     transition: all 0.5s;
   }
@@ -280,7 +184,7 @@ main {
     border-bottom: 1px solid #e13d3d;
     display: block;
     max-width: 100%;
-    width: 650px;
+    width: 310px;
     position: relative;
     margin: 0 auto;
   }
@@ -291,28 +195,134 @@ main {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  padding: 0;
+  height: fit-content;
+  max-width: 100%;
+  width: 320px;
+}
+
+
+.post-card {
+  margin: 0 auto;
+  padding: 0 ;
+  height: fit-content;
+  max-width: 100%;
+  width: 320px;
+}
+
+
+aside {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 100%;
+  width: 310px;
+}
+
+.side-card {
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #fff;
   height: fit-content;
 }
+
+.footer {
+  max-width: 100%;
+  width: 320px;
+  flex-direction: column;
+  position: relative;
+  padding: 0 20px;
+  margin: 15px auto 0 auto;
+}
+}
+
+/* Medium Screens */
+@media (min-width: 768px) and (max-width: 992px) {
+  .container {
+    display: grid;
+    grid-gap: 0;
+    height: fit-content;
+    /* grid-template-columns: 1fr; */
+    grid-template-columns: repeat(auto-fit, minmax(530px, 1fr));
+    grid-template-rows: auto auto 1fr auto auto;
+    grid-template-areas:
+      "header"
+      "nav"
+      "post"
+      "side"
+      "footer";
+    overflow: hidden;
+    box-sizing: border-box;
+    max-width: 992px;
+    padding: 0;
+    margin: 0;
+  }
+
+
+  .header {
+    margin: auto;
+  }
+
+  label {
+    display: block;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+  }
+
+  label:hover {
+    cursor: pointer;
+  }
+
+  .leb-menu {
+    border-bottom: 1px solid #e13d3d;
+    display: block;
+    max-width: 100%;
+    width: 640px;
+    position: relative;
+    margin: 0 auto;
+  }
+
+
+  #dws-menu:checked ~ .menu {
+    margin: 20px 0 0 52px;
+  }
+
+  .menu {
+    position: absolute;
+    width: 200px;
+    margin-left: -300px;
+    transition: all 0.5s;
+  }
+
+
+ main {
+  grid-area: post;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  height: fit-content;
+  overflow: hidden; 
+}
+
 
   .post-card {
     margin: 0 auto;
     padding: 0 auto;
-    width: 680px;
     height: fit-content;
   }
 
-
+  
   aside {
     margin:  0 auto;
     max-width: 80%;
-    width: 65%;
-    /* width: 45%; */
+    width: 350px;
     grid-gap: 10px;
   }
   
   .side-card {
     max-width: 100%;
-    width: 45%;
+    width: 100%;
     margin: 0 auto;
     background-color: #fff;
     height: fit-content;
@@ -321,6 +331,7 @@ main {
   .footer {
     width: 100vw;
     position: relative;
-    padding: 0;
+    padding: 0 35px;
+    margin: 20px auto;
   }
 }

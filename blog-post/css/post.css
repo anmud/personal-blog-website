@@ -66,13 +66,11 @@ label {
   z-index: 100;
 }
 
-.indents {
-  margin: 15px 10px;
-}
 
 .nav-items {
-  margin: 0 25px;
+  margin: 15px 25px;
 }
+
 
 .leb-menu {
   border-bottom: 1px solid #e13d3d;
@@ -180,25 +178,30 @@ aside {
 /* Small Screens */
 @media (min-width: 320px) and (max-width: 600px) {
   .post-container {
-    margin: auto;
-    grid-gap: 0;
     display: grid;
-    height: fit-content;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; 
+    /* grid-template-columns: repeat(auto-fit, minmax(530px, 1fr)); */
     grid-template-rows: auto auto 1fr auto auto;
+    height: fit-content;
     grid-template-areas:
       "header"
       "nav"
-      "post"
+      "main"
       "side"
       "footer";
-    overflow: hidden;
-    box-sizing: border-box;
+      max-width: 600px;
+      padding: 0;
+      margin: 0;
+      overflow: hidden;
   }
 
 
   .header {
-    margin: 0;
+    margin: 0 auto;
+    padding: 0 auto;
+    text-align: center;
+    max-width: 100%;
+    width: 297px;
   }
 
   label {
@@ -215,43 +218,52 @@ aside {
   .leb-menu {
     border-bottom: 1px solid #e13d3d;
     display: block;
-    width: 100vw;
+    max-width: 100%;
+    width: 310px;
     position: relative;
+    margin: 0 auto;
+    padding: 0;
   }
 
 
   #dws-menu:checked ~ .menu {
-    margin: 0;
+    margin: 139px auto;
   }
 
   .menu {
     position: absolute;
     width: 200px;
-    margin-left: -200px;
+    height: 150px;
+    margin-left: -250px;
     transition: all 0.5s;
   }
 
 
-  /* Main Content */
- main {
-  grid-area: post;
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  height: fit-content;
-  overflow: hidden; 
-}
+  main {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0 auto;
+    height: fit-content;
+    max-width: 100%;
+    width: 320px;
+  }
 
  
 .card-container {
-    margin: 0;
-    padding: 0;
+  margin: 0 auto;
+  padding: 0 ;
+  height: fit-content;
+  max-width: 100%;
+  width: 320px;
  }
  
  
   .post-content {
-    margin: 0;
-    padding: 0;
+    margin: 0 auto;
+    padding: 0 auto;
   }
 
   .post-body {
@@ -262,11 +274,15 @@ aside {
   .additional-posts {
     margin: 0;
     padding: 0;
+    max-width: 100%;
+    width: 310px;
   }
 
   .comments-card {
     margin: 0;
     padding: 0;
+    max-width: 100%;
+    width: 310px;
   }
 
 
@@ -280,7 +296,8 @@ form {
   flex-direction: column;
   align-items: flex-start;
   height: fit-content;
-  width: 100%;
+  max-width: 100%;
+  width: 310px;
   background-color: #fff;
   margin: 10px auto;
   padding: 1em 3em 1em 2em;
@@ -294,24 +311,27 @@ form p {
  
 aside {
   margin: 0 auto;
-  width: 78%;
-  grid-gap: 10px;
+  padding: 0;
+  max-width: 100%;
+  width: 310px;
 }
 
-
-/* TODO:  Add a card for additional info */
 .side-card {
-  margin: 0;
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto;
   background-color: #fff;
   height: fit-content;
 }
 
-  .footer {
-    flex-direction: column;
-    width: 100vw;
-    position: relative;
-    padding: 0;
-  }
+.footer {
+  max-width: 100%;
+  width: 320px;
+  flex-direction: column;
+  position: relative;
+  padding: 0 20px;
+  margin: 15px auto 0 auto;
+}
 }
 
 
@@ -363,13 +383,13 @@ aside {
 
 
   #dws-menu:checked ~ .menu {
-    margin: 0;
+    margin: 95px auto;
   }
 
   .menu {
     position: absolute;
-    width: 200px;
-    margin-left: -200px;
+    width: 300px;
+    margin-left: -300px;
     transition: all 0.5s;
   }
 
@@ -437,17 +457,15 @@ form p {
 aside {
   margin:  0 auto;
   max-width: 80%;
-  width: 65%;
-  /* width: 45%; */
-  grid-gap: 10px;
+  width: 350px;
 }
 
 .side-card {
   max-width: 100%;
-    width: 45%;
-    margin: 0 auto;
-    background-color: #fff;
-    height: fit-content;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #fff;
+  height: fit-content;
 }
 
 .footer {

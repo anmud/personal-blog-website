@@ -85,7 +85,7 @@
 /* Small Screens */
 @media (min-width: 320px) and (max-width: 600px) {
   .additional-posts {
-    margin: auto;
+    margin: 0 auto;
   }
 
   .additional-posts h2 {
@@ -95,17 +95,49 @@
 
   .additional-cards {
     display: block;
-    margin: 0;
+    margin: 0 auto;
   }
 
   .post-info {
     margin-bottom: 10px;
   }
 
-  .add-image-container {
-    margin: 0;
-    width: 100vw;
+
+  /* #big-image {
+    overflow: hidden;
     position: relative;
+    height: 372px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  #big-image img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: cover; 
+    position: absolute;
+    margin: 0 auto;
+    display: block;
+  } */
+
+  .add-image-container {
+    overflow: hidden;
+    position: relative;
+    height: 198px;
+    width: 100%;
+    margin: 0 auto;
+  } 
+
+  .add-image-container img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    object-fit: cover; 
+    position: absolute;
+    margin: 0 auto;
+    display: block;
   }
 
   .add-text {
